@@ -1,0 +1,67 @@
+.mitoshi {
+  padding-top: 97px;
+}
+
+.mitoshi__title {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.mitoshi__desc {
+  width: 540px;
+  margin-bottom: 32px;
+}
+
+.mitoshi__text {
+  margin: 0;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mitoshi__button-group {
+  width: 394px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mitoshi__button {
+  font-family: 'Rubik', 'Arial', sans-serif;
+  box-sizing: border-box;
+  width: 144px;
+  padding: 10px 22px;
+  line-height: 20px;
+  border-radius: 100px;
+  border: none;
+
+  &--transparent {
+    width: 191px;
+    color: #4f4f4f;
+    background: none;
+    border: 1px solid #ffc700;
+  }
+
+  &--gold {
+    text-align: right;
+    position: relative;
+    width: 169px;
+    color: #ffffff;
+    background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
+    box-shadow: 0 0 20px #ffffff;
+  }
+}
+
+.mitoshi__button--gold::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 20px;
+  background-image: url(../images/telegram.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
