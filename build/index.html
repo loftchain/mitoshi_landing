@@ -313,7 +313,13 @@
         </section>
         <section class="how" id="how">
           <div class="how__img-wrap">
-            <img src="images/phone.png" alt="How it works">
+            <picture>
+              <source media="(max-width: 991px)" srcset="images/phone-mobile.webp" type="image/webp">
+              <source media="(max-width: 991px)" srcset="images/phone-mobile.png">
+              <source media="(max-width: 1366px)" srcset="images/phone-tablet.webp" type="image/webp">
+              <source media="(max-width: 1366px)" srcset="images/phone-tablet.png">
+              <img src="images/phone-desktop.png" alt="How it works">
+            </picture>
           </div>
           <div class="how__desc">
             <h2 class="how__title">How it Works</h2>
