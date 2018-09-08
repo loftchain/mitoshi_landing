@@ -1,9 +1,49 @@
 .page-wrapper {
-  height: 100vh;
   background-image: url(../images/main-bg-right.png),
-                    url(../images/main-bg-left.png),
-                    url(../images/main-bg-bottom.png);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: top right, top left, 27% bottom;
-  background-size: contain, auto, auto;
+                    url(../images/main-bg-left.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, top left;
+  background-size: 952px 1080px, auto;
+}
+
+@media (max-height: 1000px) {
+  .page-wrapper {
+    background-size: 900px auto, auto;
+  }
+}
+
+@media (max-height: 950px) {
+  .page-wrapper {
+    background-size: 850px auto, auto;
+  }
+}
+
+@media (max-height: 900px) {
+  .page-wrapper {
+    background-size: 800px auto, auto;
+  }
+}
+
+@media (max-height: 850px) {
+  .page-wrapper {
+    background-size: 750px auto, auto;
+  }
+}
+
+@media (max-height: 800px) {
+  .page-wrapper {
+    background-size: 720px auto, auto;
+  }
+}
+
+@media (max-height: 750px) {
+  .page-wrapper {
+    background-size: 700px auto, auto;
+  }
+}
+
+@media (max-height: 700px) {
+  .page-wrapper {
+    background-size: 680px auto, auto;
+  }
 }

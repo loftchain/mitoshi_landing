@@ -1,17 +1,13 @@
-.team__title {
-  margin: 0;
-  margin-bottom: 30px;
-}
-
 .team__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 
   &--team {
-    margin-bottom: 100px;
+    margin-bottom: 70px;
   }
 }
 
@@ -26,8 +22,8 @@
   width: 182px;
   height: 182px;
   border-radius: 50%;
+  overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.04);
-  background-image: url(../images/team-1.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -42,4 +38,38 @@
 .team__member-occup {
   margin: 0;
   line-height: 18px;
+}
+
+
+@media (max-width: 1199px) {
+  .team__img-wrap {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 991px) {
+  .team__list {
+    &--team {
+      margin-bottom: 50px;
+    }
+  }
+
+  .team__img-wrap {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 767px) {
+  .team__list {
+    &--team {
+      margin-bottom: 30px;
+    }
+  }
+
+  .team__img-wrap {
+    width: 100px;
+    height: 100px;
+  }
 }
