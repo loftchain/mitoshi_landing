@@ -1,3 +1,6 @@
+.footer {
+  margin-top: 100px;
+}
 .footer__wrapper {
   display: flex;
   flex-direction: column;
@@ -9,6 +12,7 @@
 
 .footer__list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 34px;
   padding: 0;
@@ -21,6 +25,10 @@
   margin-right: 26px;
   border-radius: 50%;
   background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer__item--telegram {
@@ -61,10 +69,47 @@
 
 .footer__group {
   margin: 0;
+  color: #000000;
 }
 
 .footer__group a {
   line-height: 18px;
   color: #000000;
   text-transform: capitalize;
+}
+
+.footer__group br {
+  display: none;
+}
+
+
+@media (max-width: 991px) {
+  .footer {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer {
+    margin-top: 50px;
+  }
+
+  .footer__list {
+    max-width: 400px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .footer__item {
+    margin-right: 0;
+  }
+
+  .footer__group {
+    width: 280px;
+    text-align: center;
+  }
+
+  .footer__group br {
+    display: block;
+  }
 }
