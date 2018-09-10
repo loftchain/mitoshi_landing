@@ -405,7 +405,7 @@ input[type="radio"].visually-hidden {
           transform: translateY(-50%);
   width: 24px;
   height: 20px;
-  background-image: url(../images/telegram.png);
+  background-image: url(../images/telegram.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -659,9 +659,11 @@ input[type="radio"].visually-hidden {
 .challenge__item-text {
   margin: 0;
 }
-.solution__title {
-  margin: 0;
-  margin-bottom: 39px;
+.solution {
+  background-image: url(../images/solution-bg-1.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: auto;
 }
 .solution__wrapper {
   max-width: 490px;
@@ -680,7 +682,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 .solution__button {
-  margin-top: 20px;
+  margin-top: 30px;
   font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
   padding: 12px 26px 10px;
@@ -690,6 +692,24 @@ input[type="radio"].visually-hidden {
   border: none;
   border-radius: 100px;
   box-shadow: 0 0 20px #ffffff;
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+  .solution__text {
+    margin-bottom: 25px;
+  }
+  .solution__text:last-child {
+    margin-bottom: 0;
+  }
+  .solution__button {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .solution {
+    background-image: none;
+  }
 }
 .how {
   display: flex;
