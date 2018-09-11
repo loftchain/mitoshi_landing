@@ -8,7 +8,8 @@
 }
 
 .mitoshi__desc {
-  width: 540px;
+  max-width: 540px;
+  width: 100%;
   margin-bottom: 32px;
 }
 
@@ -112,5 +113,62 @@
   .mitoshi {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .mitoshi {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mitoshi {
+    background-size: 200px auto;
+  }
+
+  .mitoshi__text {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mitoshi__text {
+    margin-bottom: 20px;
+  }
+
+  .mitoshi__button {
+    padding: 12px 14px 10px;
+    line-height: 18px;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .mitoshi {
+    background-image: none;
+  }
+
+  .mitoshi__button-group {
+    width: 290px;
+  }
+
+  .mitoshi__button {
+    width: auto;
+    padding: 7px;
+    line-height: 18px;
+
+    &--transparent {
+      width: auto;
+    }
+
+    &--gold {
+      padding-left: 30px;
+    }
+  }
+
+  .mitoshi__button--gold::before {
+    left: 8px;
   }
 }
