@@ -1,76 +1,78 @@
 .page-wrapper {
   background-image: url(../images/main-bg-right.png),
-                    url(../images/main-bg-left.png);
-  background-repeat: no-repeat, no-repeat;
-  background-position: top right, top left;
-  background-size: 952px 1080px, auto;
+                    url(../images/main-bg-left.png),
+                    url(../images/main-bg-bottom.png);
+  background-repeat: no-repeat;
+  background-position: top right, top left, bottom right;
+  background-size: 952px 1080px, auto, 750px auto;
 }
 
 @media (max-height: 1000px) {
   .page-wrapper {
-    background-size: 900px auto, auto;
+    background-size: 900px auto, auto, 750px auto;
   }
 }
 
 @media (max-height: 950px) {
   .page-wrapper {
-    background-size: 850px auto, auto;
+    background-size: 850px auto, auto, 750px auto;
   }
 }
 
 @media (max-height: 900px) {
   .page-wrapper {
-    background-size: 800px auto, auto;
+    background-size: 800px auto, auto, 750px auto;
   }
 }
 
 @media (max-height: 850px) {
   .page-wrapper {
-    background-size: 750px auto, auto;
+    background-size: 750px auto, auto, 750px auto;
   }
 }
 
 @media (max-height: 800px) {
   .page-wrapper {
-    background-size: 720px auto, auto;
+    background-size: 720px auto, auto, 750px auto;
   }
 }
 
 @media (max-height: 750px) {
   .page-wrapper {
-    background-size: 700px auto, auto;
+    background-size: 700px auto, auto, 650px auto;
   }
 }
 
 @media (max-height: 700px) {
   .page-wrapper {
-    background-size: 680px auto, auto;
+    background-size: 680px auto, auto, 600px auto;
   }
 }
 
 @media (max-width: 1199px) {
   .page-wrapper {
-    background-size: 680px auto, auto;
+    background-size: 680px auto, auto, 650px auto;
   }
 }
 
 @media (max-width: 991px) {
   .page-wrapper {
-    background-size: 600px auto, 150px auto;
+    background-size: 600px auto, 150px auto, 550px auto;
   }
 }
 
 @media (max-width: 767px) {
   .page-wrapper {
-    background-size: 480px auto, 120px auto;
+    background-size: 480px auto, 120px auto, 450px auto;
   }
 }
 
 @media (max-width: 575px) {
   .page-wrapper {
-    background-image: url(../images/main-bg-right.png);
+    background-image: url(../images/main-bg-right.png),
+                      url(../images/main-bg-bottom.png);
     background-repeat: no-repeat;
-    background-position: top right;
-    background-size: 350px auto;
+    background-position: top right, bottom right;
+    background-size: 350px auto, 350px auto;
   }
 }
