@@ -304,10 +304,15 @@ input[type="radio"].visually-hidden {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  max-width: 1200px;
   width: 100%;
 }
+.header--white {
+  background-color: #ffffff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.07);
+}
 .header__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   padding: 0 15px;
@@ -329,6 +334,7 @@ input[type="radio"].visually-hidden {
   padding: 10px;
   width: 144px;
   line-height: 20px;
+  color: #4f4f4f;
   background: #ffffff;
   border: 1px solid #ffc700;
   border-radius: 100px;
@@ -362,13 +368,13 @@ input[type="radio"].visually-hidden {
   .header__group {
     box-sizing: border-box;
     position: absolute;
-    top: 80px;
+    top: 79px;
     right: -100%;
     width: 320px;
     align-items: stretch;
     flex-direction: column;
     padding-left: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
     background-color: #ffffff;
     box-shadow: -8px 9px 10px rgba(0, 0, 0, 0.02);
     border-radius: 0 0 0 5px;
@@ -1127,6 +1133,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .how {
     align-items: center;
+    background-image: none;
   }
   .how__item {
     margin-bottom: 30px;
