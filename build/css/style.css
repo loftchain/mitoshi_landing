@@ -976,6 +976,10 @@ input[type="radio"].visually-hidden {
 }
 .how {
   display: flex;
+  background-image: url(../images/rect-bg.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: auto;
 }
 .how__img-wrap {
   flex-shrink: 0;
@@ -1067,52 +1071,58 @@ input[type="radio"].visually-hidden {
     max-width: 290px;
   }
 }
-.roadmap__title {
-  margin: 0;
-  margin-bottom: 58px;
+.roadmap {
+  position: relative;
+  min-height: 820px;
+}
+.roadmap__img-wrap {
+  position: absolute;
+  max-width: 1139px;
+  height: 594px;
+  width: 100%;
+  top: 165px;
+  left: 0;
+  z-index: 1;
+}
+.roadmap__img-wrap img {
+  height: 594px;
 }
 .roadmap__list {
+  z-index: 2;
+  position: absolute;
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 .roadmap__list--start {
-  justify-content: flex-start;
-  margin-bottom: 150px;
+  width: 960px;
+  top: 130px;
+  left: 0;
 }
 .roadmap__list--center {
-  justify-content: center;
-  margin-bottom: 146px;
+  width: 620px;
+  top: 400px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .roadmap__list--end {
-  justify-content: flex-end;
-}
-.roadmap__list--start .roadmap__item {
-  margin-right: 107px;
-}
-.roadmap__list--start .roadmap__item:last-child {
-  margin-right: 0;
-}
-.roadmap__list--center .roadmap__item {
-  margin-right: 101px;
-}
-.roadmap__list--center .roadmap__item:last-child {
-  margin-right: 0;
-}
-.roadmap__list--end .roadmap__item {
-  margin-left: 110px;
-}
-.roadmap__list--end .roadmap__item:first-child {
-  margin-left: 0;
+  width: 960px;
+  top: 685px;
+  right: 0;
 }
 .roadmap__item {
+  box-sizing: border-box;
+  padding: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 259px;
   min-height: 126px;
+  background-color: #ffffff;
   box-shadow: 0 0 20px rgba(79, 79, 79, 0.07);
   border-radius: 100px;
 }
@@ -1141,6 +1151,71 @@ input[type="radio"].visually-hidden {
   height: 5px;
   background-color: #fbb41e;
   border-radius: 50%;
+}
+@media (max-width: 991px) {
+  .roadmap {
+    min-height: 700px;
+  }
+  .roadmap__img-wrap {
+    height: 500px;
+    top: 150px;
+  }
+  .roadmap__img-wrap img {
+    height: 500px;
+  }
+  .roadmap__list--start {
+    width: 700px;
+    top: 115px;
+    left: 0;
+  }
+  .roadmap__list--center {
+    width: 460px;
+    top: 350px;
+  }
+  .roadmap__list--end {
+    width: 700px;
+    top: 580px;
+  }
+  .roadmap__item {
+    width: 210px;
+    min-height: 110px;
+    border-radius: 90px;
+  }
+}
+@media (max-width: 767px) {
+  .roadmap {
+    min-height: auto;
+  }
+  .roadmap__img-wrap {
+    display: none;
+  }
+  .roadmap__list {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+  }
+  .roadmap__list--start {
+    width: auto;
+  }
+  .roadmap__list--center {
+    width: auto;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .roadmap__list--end {
+    width: auto;
+  }
+  .roadmap__item {
+    width: 100%;
+    min-height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  .roadmap__item:last-child {
+    margin-bottom: 0;
+  }
 }
 .team__list {
   display: flex;
