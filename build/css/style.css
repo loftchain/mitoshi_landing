@@ -180,7 +180,7 @@ body {
   background-color: #ffffff;
 }
 section {
-  padding-bottom: 100px;
+  padding-top: 100px;
 }
 a {
   text-decoration: none;
@@ -192,7 +192,7 @@ img {
 h2 {
   margin: 0;
   margin-bottom: 30px;
-  padding-top: 30px;
+  margin-top: 30px;
   font-family: 'Crimson Text', 'Times New Roman', serif;
   font-size: 50px;
   line-height: 64px;
@@ -214,22 +214,22 @@ input[type="radio"].visually-hidden {
 }
 @media (max-width: 991px) {
   section {
-    padding-bottom: 80px;
+    padding-top: 80px;
   }
   h2 {
     margin-bottom: 25px;
-    padding-top: 25px;
+    margin-top: 25px;
     font-size: 42px;
     line-height: 54px;
   }
 }
 @media (max-width: 767px) {
   section {
-    padding-bottom: 60px;
+    padding-top: 60px;
   }
   h2 {
     margin-bottom: 20px;
-    padding-top: 20px;
+    margin-top: 20px;
     font-size: 35px;
     line-height: 45px;
   }
@@ -405,10 +405,14 @@ input[type="radio"].visually-hidden {
 .main-nav__item:last-child {
   margin-right: 0;
 }
-.main-nav__item--active {
-  position: relative;
+.main-nav__link {
+  color: #4f4f4f;
 }
-.main-nav__item--active::before {
+.main-nav__link--active {
+  position: relative;
+  color: #fbb41e;
+}
+.main-nav__link--active::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -419,12 +423,6 @@ input[type="radio"].visually-hidden {
           transform: translateX(-50%);
   background-color: #fbb41e;
   border-radius: 50%;
-}
-.main-nav__item a {
-  color: #4f4f4f;
-}
-.main-nav__item--active a {
-  color: #fbb41e;
 }
 @media (max-width: 1199px) {
   .main-nav {
@@ -438,14 +436,17 @@ input[type="radio"].visually-hidden {
   }
   .main-nav__item {
     margin-right: 0;
-    padding: 7px 5px;
     border-bottom: 1px solid rgba(223, 223, 223, 0.28);
   }
-  .main-nav__item--active::before {
-    display: none;
+  .main-nav__link {
+    display: block;
+    padding: 7px 5px;
   }
-  .main-nav__item--active a {
+  .main-nav__link--active {
     color: #fbb41e;
+  }
+  .main-nav__link--active::before {
+    display: none;
   }
 }
 .main__wrapper {
