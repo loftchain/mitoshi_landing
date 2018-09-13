@@ -36,38 +36,42 @@
 }
 
 .contacts__list-item {
+  margin-right: 23px;
+}
+
+.contacts__list-item a {
+  display: block;
   width: 45px;
   height: 45px;
-  margin-right: 23px;
   border-radius: 50%;
   background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
 }
 
-.contacts__list-item--medium {
+.contacts__list-item--medium a {
   background-image: url(../images/medium.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.contacts__list-item--reddit {
+.contacts__list-item--reddit a {
   background-image: url(../images/reddit.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.contacts__list-item--github {
+.contacts__list-item--github a {
   background-image: url(../images/github.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.contacts__list-item--bitcoin {
+.contacts__list-item--bitcoin a {
   background-image: url(../images/bitcoin.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.contacts__list-item--stemit {
+.contacts__list-item--stemit a {
   background-image: url(../images/steemit.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
@@ -83,6 +87,7 @@
   border: none;
   border-radius: 100px;
   box-shadow: 0 0 20px #ffffff;
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -102,13 +107,13 @@
     }
   }
 
-  .contacts__list-item {
+  .contacts__list-item a {
     width: 38px;
     height: 38px;
+  }
 
-    &--medium {
-      background-size: 26px 21px, auto;
-    }
+  .contacts__list-item--medium a {
+    background-size: 26px 21px, auto;
   }
 }
 

@@ -340,6 +340,7 @@ input[type="radio"].visually-hidden {
   background: #ffffff;
   border: 1px solid #ffc700;
   border-radius: 100px;
+  cursor: pointer;
 }
 .header__toggle {
   display: none;
@@ -352,6 +353,7 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-size: contain;
   outline: none;
+  cursor: pointer;
   transition: all 0.2s ease;
 }
 .header__toggle--active {
@@ -490,6 +492,7 @@ input[type="radio"].visually-hidden {
   line-height: 20px;
   border-radius: 100px;
   border: none;
+  cursor: pointer;
 }
 .mitoshi__button--transparent {
   width: 191px;
@@ -705,6 +708,7 @@ input[type="radio"].visually-hidden {
   border: 1px solid #ffc700;
   background: none;
   border-radius: 100px;
+  cursor: pointer;
 }
 .sale__allocation {
   display: flex;
@@ -1050,6 +1054,7 @@ input[type="radio"].visually-hidden {
   border: none;
   border-radius: 100px;
   box-shadow: 0 0 20px #ffffff;
+  cursor: pointer;
 }
 @media (max-width: 991px) {
   .solution__text {
@@ -1113,6 +1118,7 @@ input[type="radio"].visually-hidden {
   border: none;
   border-radius: 100px;
   box-shadow: 0 0 20px #ffffff;
+  cursor: pointer;
 }
 @media (max-width: 1366px) {
   .how__img-wrap {
@@ -1432,33 +1438,36 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 .contacts__list-item {
+  margin-right: 23px;
+}
+.contacts__list-item a {
+  display: block;
   width: 45px;
   height: 45px;
-  margin-right: 23px;
   border-radius: 50%;
   background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
 }
-.contacts__list-item--medium {
+.contacts__list-item--medium a {
   background-image: url(../images/medium.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
-.contacts__list-item--reddit {
+.contacts__list-item--reddit a {
   background-image: url(../images/reddit.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
-.contacts__list-item--github {
+.contacts__list-item--github a {
   background-image: url(../images/github.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
-.contacts__list-item--bitcoin {
+.contacts__list-item--bitcoin a {
   background-image: url(../images/bitcoin.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
-.contacts__list-item--stemit {
+.contacts__list-item--stemit a {
   background-image: url(../images/steemit.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
@@ -1473,6 +1482,7 @@ input[type="radio"].visually-hidden {
   border: none;
   border-radius: 100px;
   box-shadow: 0 0 20px #ffffff;
+  cursor: pointer;
 }
 @media (max-width: 991px) {
   .contacts__group {
@@ -1487,11 +1497,11 @@ input[type="radio"].visually-hidden {
   .contacts__text:last-child {
     margin-bottom: 0;
   }
-  .contacts__list-item {
+  .contacts__list-item a {
     width: 38px;
     height: 38px;
   }
-  .contacts__list-item--medium {
+  .contacts__list-item--medium a {
     background-size: 26px 21px, auto;
   }
 }
@@ -1529,41 +1539,44 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 .footer__item {
+  margin-right: 26px;
+}
+.footer__item a {
+  display: block;
   width: 45px;
   height: 45px;
-  margin-right: 26px;
   border-radius: 50%;
   background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
 }
-.footer__item:last-child {
+.footer__item a:last-child {
   margin-right: 0;
 }
-.footer__item--telegram {
+.footer__item--telegram a {
   background-image: url(../images/telegram.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
-.footer__item--whatsapp {
+.footer__item--whatsapp a {
   background-image: url(../images/whatsapp.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
-.footer__item--mail {
+.footer__item--mail a {
   background-image: url(../images/mail.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
-.footer__item--facebook {
+.footer__item--facebook a {
   background-image: url(../images/facebook.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
-.footer__item--lkdin {
+.footer__item--lkdin a {
   background-image: url(../images/lkdin.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
 }
-.footer__item--twitter {
+.footer__item--twitter a {
   background-image: url(../images/twitter.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   background-repeat: no-repeat;
   background-position: center;
@@ -1584,23 +1597,23 @@ input[type="radio"].visually-hidden {
   .footer {
     margin-top: 30px;
   }
-  .footer__item {
+  .footer__item a {
     width: 38px;
     height: 38px;
   }
-  .footer__item--telegram {
+  .footer__item--telegram a {
     background-size: 42px 42px, auto;
   }
-  .footer__item--whatsapp {
-    background-size: 27px 21px, auto;
+  .footer__item--whatsapp a {
+    background-size: 27px 27px, auto;
   }
-  .footer__item--facebook {
+  .footer__item--facebook a {
     background-size: 44px 41px, auto;
   }
-  .footer__item--lkdin {
+  .footer__item--lkdin a {
     background-size: 42px 42px, auto;
   }
-  .footer__item--twitter {
+  .footer__item--twitter a {
     background-size: 42px 42px, auto;
   }
 }
