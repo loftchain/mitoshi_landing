@@ -180,7 +180,8 @@ body {
   background-color: #ffffff;
 }
 section {
-  padding-top: 100px;
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
 a {
   text-decoration: none;
@@ -215,6 +216,7 @@ input[type="radio"].visually-hidden {
 @media (max-width: 991px) {
   section {
     padding-top: 80px;
+    padding-bottom: 0;
   }
   h2 {
     margin-bottom: 25px;
@@ -456,7 +458,7 @@ input[type="radio"].visually-hidden {
 }
 .mitoshi {
   padding-top: 250px;
-  padding-bottom: 300px;
+  padding-bottom: 180px;
   background-image: url(../images/mitoshi-bg-bottom.png);
   background-repeat: no-repeat;
   background-position: 27% bottom;
@@ -518,53 +520,42 @@ input[type="radio"].visually-hidden {
 @media (max-height: 1000px) {
   .mitoshi {
     padding-top: 220px;
-    padding-bottom: 260px;
   }
 }
 @media (max-height: 950px) {
   .mitoshi {
     padding-top: 200px;
-    padding-bottom: 220px;
   }
 }
 @media (max-height: 900px) {
   .mitoshi {
     padding-top: 180px;
-    padding-bottom: 210px;
   }
 }
 @media (max-height: 850px) {
   .mitoshi {
     padding-top: 150px;
-    padding-bottom: 180px;
   }
 }
 @media (max-height: 800px) {
   .mitoshi {
     padding-top: 130px;
-    padding-bottom: 160px;
   }
 }
 @media (max-height: 750px) {
   .mitoshi {
     padding-top: 110px;
-    padding-bottom: 140px;
-  }
-}
-@media (max-height: 700px) {
-  .mitoshi {
-    padding-top: 100px;
-    padding-bottom: 100px;
   }
 }
 @media (max-width: 1199px) {
   .mitoshi {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 110px;
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 991px) {
   .mitoshi {
+    background-position: 50% bottom;
     background-size: 200px auto;
   }
   .mitoshi__text {
@@ -582,6 +573,7 @@ input[type="radio"].visually-hidden {
 }
 @media (max-width: 575px) {
   .mitoshi {
+    padding-bottom: 0;
     background-image: none;
   }
   .mitoshi__button-group {
@@ -1027,7 +1019,7 @@ input[type="radio"].visually-hidden {
 .solution {
   background-image: url(../images/solution-bg.png), url(../images/rect-bg.png);
   background-repeat: no-repeat;
-  background-position: 100% 0, 90% 0;
+  background-position: 100% 65%, 90% 100%;
   background-size: auto, auto;
 }
 .solution__wrapper {
@@ -1078,7 +1070,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   background-image: url(../images/rect-bg.png);
   background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: 100% 30%;
   background-size: auto;
 }
 .how__img-wrap {
@@ -1181,7 +1173,7 @@ input[type="radio"].visually-hidden {
   max-width: 1139px;
   height: 594px;
   width: 100%;
-  top: 165px;
+  top: 245px;
   left: 0;
   z-index: 1;
 }
@@ -1199,19 +1191,19 @@ input[type="radio"].visually-hidden {
 }
 .roadmap__list--start {
   width: 960px;
-  top: 130px;
+  top: 210px;
   left: 0;
 }
 .roadmap__list--center {
   width: 620px;
-  top: 400px;
+  top: 480px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 .roadmap__list--end {
   width: 960px;
-  top: 685px;
+  top: 765px;
   right: 0;
 }
 .roadmap__item {
@@ -1271,11 +1263,11 @@ input[type="radio"].visually-hidden {
   }
   .roadmap__list--center {
     width: 460px;
-    top: 350px;
+    top: 440px;
   }
   .roadmap__list--end {
     width: 700px;
-    top: 580px;
+    top: 680px;
   }
   .roadmap__item {
     width: 210px;

@@ -21,7 +21,7 @@ $(document).ready(function() {
     hideMenu();
 
     var target = this.hash,
-      menu = target, $target = $(target);
+      $target = $(target);
 
 
 
