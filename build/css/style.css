@@ -1258,23 +1258,23 @@ input[type="radio"].visually-hidden {
   }
   .roadmap__img-wrap {
     height: 500px;
-    top: 150px;
+    top: 210px;
   }
   .roadmap__img-wrap img {
     height: 500px;
   }
   .roadmap__list--start {
     width: 700px;
-    top: 115px;
+    top: 190px;
     left: 0;
   }
   .roadmap__list--center {
     width: 460px;
-    top: 440px;
+    top: 410px;
   }
   .roadmap__list--end {
     width: 700px;
-    top: 680px;
+    top: 650px;
   }
   .roadmap__item {
     width: 210px;
