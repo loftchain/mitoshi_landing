@@ -37,12 +37,21 @@
   border-radius: 100px;
   border: none;
   cursor: pointer;
+  transition: all 0.1s;
 
   &--transparent {
     width: 191px;
     color: #4f4f4f;
     background: none;
     border: 1px solid #ffc700;
+    transition: box-shadow 0.1s;
+
+    &:hover {
+      background: linear-gradient(91.95deg, #ffc701 0.35%, #ffe13a 99.76%);
+      box-shadow: 0 0 20px #ffc700;
+      border: 1px solid transparent;
+      color: #ffffff;
+    }
   }
 
   &--gold {
@@ -50,8 +59,12 @@
     position: relative;
     width: 169px;
     color: #ffffff;
-    background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
+    background: linear-gradient(90deg, #ffc700 5.65%, #ffe13a 95.2%);
     box-shadow: 0 0 20px #ffffff;
+
+    &:hover {
+      box-shadow: 0 0 20px #ffc700;
+    }
   }
 }
 

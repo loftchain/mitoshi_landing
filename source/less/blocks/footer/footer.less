@@ -1,5 +1,6 @@
 .footer {
   margin-top: 100px;
+  padding-bottom: 18px;
 }
 .footer__wrapper {
   display: flex;
@@ -29,9 +30,14 @@
   height: 45px;
   border-radius: 50%;
   background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
+  transition: all 0.1s;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px #ffc700;
   }
 }
 
@@ -77,8 +83,14 @@
 }
 
 .footer__group a {
-  line-height: 18px;
+  display: inline-block;
+  border-bottom: 1px solid #000000;
+  line-height: 17px;
   color: #000000;
+
+  &:hover {
+    border-bottom: none;
+  }
 }
 
 .footer__group br {

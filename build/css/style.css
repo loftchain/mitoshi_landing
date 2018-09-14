@@ -342,6 +342,9 @@ input[type="radio"].visually-hidden {
   border-radius: 100px;
   cursor: pointer;
 }
+.header__button:hover {
+  box-shadow: 0 0 10px 2px #ffffff, 0 0 20px #ffc700;
+}
 .header__toggle {
   display: none;
   width: 36px;
@@ -493,20 +496,31 @@ input[type="radio"].visually-hidden {
   border-radius: 100px;
   border: none;
   cursor: pointer;
+  transition: all 0.1s;
 }
 .mitoshi__button--transparent {
   width: 191px;
   color: #4f4f4f;
   background: none;
   border: 1px solid #ffc700;
+  transition: box-shadow 0.1s;
+}
+.mitoshi__button--transparent:hover {
+  background: linear-gradient(91.95deg, #ffc701 0.35%, #ffe13a 99.76%);
+  box-shadow: 0 0 20px #ffc700;
+  border: 1px solid transparent;
+  color: #ffffff;
 }
 .mitoshi__button--gold {
   text-align: right;
   position: relative;
   width: 169px;
   color: #ffffff;
-  background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
+  background: linear-gradient(90deg, #ffc700 5.65%, #ffe13a 95.2%);
   box-shadow: 0 0 20px #ffffff;
+}
+.mitoshi__button--gold:hover {
+  box-shadow: 0 0 20px #ffc700;
 }
 .mitoshi__button--gold::before {
   content: "";
@@ -635,6 +649,10 @@ input[type="radio"].visually-hidden {
   background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
   border-radius: 100px;
   box-shadow: 0 0 20px #ffffff;
+  transition: all 0.1s;
+}
+.about__button:hover {
+  box-shadow: 0 0 20px #ffc700;
 }
 @media (max-width: 991px) {
   .about__video-wrap {
@@ -705,6 +723,13 @@ input[type="radio"].visually-hidden {
   background: none;
   border-radius: 100px;
   cursor: pointer;
+  transition: box-shadow 0.1s;
+}
+.sale__button:hover {
+  background: linear-gradient(91.95deg, #ffc701 0.35%, #ffe13a 99.76%);
+  box-shadow: 0 0 20px #ffc700;
+  border: 1px solid transparent;
+  color: #ffffff;
 }
 .sale__allocation {
   display: flex;
@@ -1045,6 +1070,10 @@ input[type="radio"].visually-hidden {
   border-radius: 100px;
   box-shadow: 0 0 20px #ffffff;
   cursor: pointer;
+  transition: all 0.1s;
+}
+.solution__button:hover {
+  box-shadow: 0 0 20px #ffc700;
 }
 @media (max-width: 991px) {
   .solution__text {
@@ -1109,6 +1138,10 @@ input[type="radio"].visually-hidden {
   border-radius: 100px;
   box-shadow: 0 0 20px #ffffff;
   cursor: pointer;
+  transition: all 0.1s;
+}
+.how__button:hover {
+  box-shadow: 0 0 20px #ffc700;
 }
 @media (max-width: 1366px) {
   .how__img-wrap {
@@ -1436,6 +1469,10 @@ input[type="radio"].visually-hidden {
   height: 45px;
   border-radius: 50%;
   background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
+  transition: all 0.1s;
+}
+.contacts__list-item a:hover {
+  box-shadow: 0 0 20px #ffc700;
 }
 .contacts__list-item--medium a {
   background-image: url(../images/medium.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
@@ -1473,6 +1510,10 @@ input[type="radio"].visually-hidden {
   border-radius: 100px;
   box-shadow: 0 0 20px #ffffff;
   cursor: pointer;
+  transition: all 0.1s;
+}
+.contacts__button:hover {
+  box-shadow: 0 0 20px #ffc700;
 }
 @media (max-width: 991px) {
   .contacts__group {
@@ -1511,6 +1552,7 @@ input[type="radio"].visually-hidden {
 }
 .footer {
   margin-top: 100px;
+  padding-bottom: 18px;
 }
 .footer__wrapper {
   display: flex;
@@ -1537,9 +1579,13 @@ input[type="radio"].visually-hidden {
   height: 45px;
   border-radius: 50%;
   background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
+  transition: all 0.1s;
 }
 .footer__item a:last-child {
   margin-right: 0;
+}
+.footer__item a:hover {
+  box-shadow: 0 0 20px #ffc700;
 }
 .footer__item--telegram a {
   background-image: url(../images/telegram.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
@@ -1576,8 +1622,13 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 .footer__group a {
-  line-height: 18px;
+  display: inline-block;
+  border-bottom: 1px solid #000000;
+  line-height: 17px;
   color: #000000;
+}
+.footer__group a:hover {
+  border-bottom: none;
 }
 .footer__group br {
   display: none;
