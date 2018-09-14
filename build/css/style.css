@@ -616,7 +616,6 @@ input[type="radio"].visually-hidden {
 }
 .about__text {
   margin: 0;
-  text-transform: capitalize;
 }
 .about__text--strong {
   margin-bottom: 5px;
@@ -672,7 +671,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 25px;
   line-height: 18px;
-  text-transform: capitalize;
 }
 .sale__content {
   display: flex;
@@ -683,7 +681,6 @@ input[type="radio"].visually-hidden {
   width: 470px;
   margin-right: 50px;
   line-height: 17px;
-  text-transform: capitalize;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
 }
 .sale__table-data {
@@ -704,7 +701,6 @@ input[type="radio"].visually-hidden {
   padding: 12px 37px 10px;
   line-height: 18px;
   color: #4f4f4f;
-  text-transform: capitalize;
   border: 1px solid #ffc700;
   background: none;
   border-radius: 100px;
@@ -713,7 +709,6 @@ input[type="radio"].visually-hidden {
 .sale__allocation {
   display: flex;
   flex-direction: column;
-  text-transform: capitalize;
 }
 .sale__graph--proceed {
   margin-top: auto;
@@ -925,9 +920,6 @@ input[type="radio"].visually-hidden {
     padding: 7px;
   }
 }
-.challenge__title {
-  text-transform: capitalize;
-}
 .challenge__title br {
   display: none;
 }
@@ -936,7 +928,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 35px;
   line-height: 18px;
-  text-transform: capitalize;
 }
 .challenge__list {
   margin: 0;
@@ -980,7 +971,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 7px;
   font-size: 18px;
   line-height: 21px;
-  text-transform: capitalize;
 }
 .challenge__item-text {
   margin: 0;
@@ -1588,7 +1578,6 @@ input[type="radio"].visually-hidden {
 .footer__group a {
   line-height: 18px;
   color: #000000;
-  text-transform: capitalize;
 }
 .footer__group br {
   display: none;
