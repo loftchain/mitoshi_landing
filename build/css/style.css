@@ -371,6 +371,7 @@ input[type="radio"].visually-hidden {
     display: block;
     position: absolute;
     right: 15px;
+    top: 22px;
   }
   .header__group {
     box-sizing: border-box;
@@ -483,14 +484,16 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 .mitoshi__button-group {
-  width: 394px;
+  width: 400px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .mitoshi__button {
   font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
   width: 144px;
+  margin-bottom: 15px;
   padding: 10px 22px;
   line-height: 20px;
   border-radius: 100px;
@@ -522,7 +525,14 @@ input[type="radio"].visually-hidden {
 .mitoshi__button--gold:hover {
   box-shadow: 0 0 20px #ffc700;
 }
-.mitoshi__button--gold::before {
+.mitoshi__button--gold-2 {
+  width: 200px;
+}
+.mitoshi__button--gold-3 {
+  width: 185px;
+}
+.mitoshi__button--gold::before,
+.mitoshi__button--tel::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -595,11 +605,13 @@ input[type="radio"].visually-hidden {
     background-image: none;
   }
   .mitoshi__button-group {
+    flex-direction: column;
+    align-items: flex-start;
     width: 290px;
   }
   .mitoshi__button {
     width: auto;
-    padding: 7px;
+    padding: 7px 20px;
     line-height: 18px;
   }
   .mitoshi__button--transparent {
@@ -1037,10 +1049,10 @@ input[type="radio"].visually-hidden {
   }
 }
 .solution {
-  background-image: url(../images/solution-bg.png), url(../images/rect-bg.png);
+  background-image: url(../images/solution-bg.png);
   background-repeat: no-repeat;
-  background-position: 100% 65%, 90% 100%;
-  background-size: auto, auto;
+  background-position: 100% 65%;
+  background-size: auto;
 }
 .solution__wrapper {
   max-width: 490px;
@@ -1093,10 +1105,6 @@ input[type="radio"].visually-hidden {
 }
 .how {
   display: flex;
-  background-image: url(../images/rect-bg.png);
-  background-repeat: no-repeat;
-  background-position: 100% 30%;
-  background-size: auto;
 }
 .how__img-wrap {
   flex-shrink: 0;
@@ -1156,7 +1164,6 @@ input[type="radio"].visually-hidden {
 @media (max-width: 767px) {
   .how {
     align-items: center;
-    background-image: none;
   }
   .how__item {
     margin-bottom: 30px;
@@ -1367,23 +1374,54 @@ input[type="radio"].visually-hidden {
     display: none;
   }
 }
+.team__title span {
+  display: block;
+}
+.team__block {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  border-top: 1px solid gray;
+}
+.team__block:last-child {
+  border-bottom: 1px solid gray;
+}
+.team__subtitle {
+  min-width: 210px;
+  margin: 0;
+  margin-right: 120px;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.team__subtitle span {
+  display: block;
+}
 .team__list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  flex-grow: 1;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.team__list--team {
-  margin-bottom: 70px;
+.team__list--executive {
+  justify-content: flex-start;
 }
 .team__list-item {
+  width: 240px;
+  margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+}
+.team__list-item--executive {
+  margin-right: 60px;
 }
 .team__img-wrap {
+  display: flex;
   margin-bottom: 16px;
   width: 182px;
   height: 182px;

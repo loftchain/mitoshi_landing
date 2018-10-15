@@ -23,8 +23,9 @@
 }
 
 .mitoshi__button-group {
-  width: 394px;
+  width: 400px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -32,6 +33,7 @@
   font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
   width: 144px;
+  margin-bottom: 15px;
   padding: 10px 22px;
   line-height: 20px;
   border-radius: 100px;
@@ -66,9 +68,18 @@
       box-shadow: 0 0 20px #ffc700;
     }
   }
+
+  &--gold-2 {
+    width: 200px;
+  }
+
+  &--gold-3 {
+    width: 185px;
+  }
 }
 
-.mitoshi__button--gold::before {
+.mitoshi__button--gold::before,
+.mitoshi__button--tel::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -154,12 +165,14 @@
   }
 
   .mitoshi__button-group {
+    flex-direction: column;
+    align-items: flex-start;
     width: 290px;
   }
 
   .mitoshi__button {
     width: auto;
-    padding: 7px;
+    padding: 7px 20px;
     line-height: 18px;
 
     &--transparent {
