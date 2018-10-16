@@ -484,7 +484,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 .mitoshi__button-group {
-  width: 400px;
+  width: 420px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -492,9 +492,9 @@ input[type="radio"].visually-hidden {
 .mitoshi__button {
   font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
-  width: 144px;
+  width: 190px;
   margin-bottom: 15px;
-  padding: 10px 22px;
+  padding: 10px 15px;
   line-height: 20px;
   border-radius: 100px;
   border: none;
@@ -502,7 +502,6 @@ input[type="radio"].visually-hidden {
   transition: all 0.1s;
 }
 .mitoshi__button--transparent {
-  width: 191px;
   color: #4f4f4f;
   background: none;
   border: 1px solid #ffc700;
@@ -517,7 +516,6 @@ input[type="radio"].visually-hidden {
 .mitoshi__button--gold {
   text-align: right;
   position: relative;
-  width: 169px;
   color: #ffffff;
   background: linear-gradient(90deg, #ffc700 5.65%, #ffe13a 95.2%);
   box-shadow: 0 0 20px #ffffff;
@@ -525,11 +523,8 @@ input[type="radio"].visually-hidden {
 .mitoshi__button--gold:hover {
   box-shadow: 0 0 20px #ffc700;
 }
-.mitoshi__button--gold-2 {
-  width: 200px;
-}
-.mitoshi__button--gold-3 {
-  width: 185px;
+.mitoshi__button--right {
+  padding-right: 40px;
 }
 .mitoshi__button--gold::before,
 .mitoshi__button--tel::before {
@@ -598,6 +593,9 @@ input[type="radio"].visually-hidden {
     padding: 12px 14px 10px;
     line-height: 18px;
   }
+  .mitoshi__button--right {
+    padding-right: 40px;
+  }
 }
 @media (max-width: 575px) {
   .mitoshi {
@@ -610,15 +608,14 @@ input[type="radio"].visually-hidden {
     width: 290px;
   }
   .mitoshi__button {
-    width: auto;
     padding: 7px 20px;
     line-height: 18px;
   }
-  .mitoshi__button--transparent {
-    width: auto;
-  }
   .mitoshi__button--gold {
     padding-left: 30px;
+  }
+  .mitoshi__button--right {
+    text-align: center;
   }
   .mitoshi__button--gold::before {
     left: 8px;
@@ -1442,6 +1439,14 @@ input[type="radio"].visually-hidden {
 .team__img-wrap img {
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+.team__img-wrap--partners {
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+.team__img-wrap--partners-shrink img {
+  width: 90%;
 }
 .team__member-name {
   margin: 0;

@@ -23,7 +23,7 @@
 }
 
 .mitoshi__button-group {
-  width: 400px;
+  width: 420px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -32,9 +32,9 @@
 .mitoshi__button {
   font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
-  width: 144px;
+  width: 190px;
   margin-bottom: 15px;
-  padding: 10px 22px;
+  padding: 10px 15px;
   line-height: 20px;
   border-radius: 100px;
   border: none;
@@ -42,7 +42,6 @@
   transition: all 0.1s;
 
   &--transparent {
-    width: 191px;
     color: #4f4f4f;
     background: none;
     border: 1px solid #ffc700;
@@ -59,7 +58,6 @@
   &--gold {
     text-align: right;
     position: relative;
-    width: 169px;
     color: #ffffff;
     background: linear-gradient(90deg, #ffc700 5.65%, #ffe13a 95.2%);
     box-shadow: 0 0 20px #ffffff;
@@ -69,12 +67,8 @@
     }
   }
 
-  &--gold-2 {
-    width: 200px;
-  }
-
-  &--gold-3 {
-    width: 185px;
+  &--right {
+    padding-right: 40px;
   }
 }
 
@@ -154,6 +148,10 @@
   .mitoshi__button {
     padding: 12px 14px 10px;
     line-height: 18px;
+
+    &--right {
+      padding-right: 40px;
+    }
   }
 
 }
@@ -171,16 +169,15 @@
   }
 
   .mitoshi__button {
-    width: auto;
     padding: 7px 20px;
     line-height: 18px;
 
-    &--transparent {
-      width: auto;
-    }
-
     &--gold {
       padding-left: 30px;
+    }
+
+    &--right {
+      text-align: center;
     }
   }
 
