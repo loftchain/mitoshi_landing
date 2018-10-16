@@ -76,7 +76,6 @@ gulp.task('serve', function () {
 gulp.task('copy', function () {
   return gulp.src([
     'source/images/**',
-    'source/files/**',
     'source/js/**',
     'source/favicon.ico'
   ], {
