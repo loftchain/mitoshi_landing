@@ -1697,6 +1697,11 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: center;
 }
+.footer__item--youtube a {
+  background-image: url(../images/youtube.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .footer__group {
   margin: 0;
   color: #000000;
