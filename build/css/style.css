@@ -1068,6 +1068,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 .solution__button {
+  display: inline-block;
   margin-top: 30px;
   font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
@@ -1132,6 +1133,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 .how__button {
+  display: inline-block;
   margin-top: 30px;
   font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
