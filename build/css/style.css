@@ -1481,17 +1481,6 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.team__img-wrap::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(76, 76, 76, 0.54);
-}
-.team__img-wrap img {
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
 .team__img-wrap--partners {
   justify-content: center;
   align-items: center;
