@@ -78,6 +78,7 @@ gulp.task('copy', function () {
     'source/images/**',
     'source/files/**',
     'source/js/**',
+    'source/php/**',
     'source/favicon.ico'
   ], {
     base: 'source'

@@ -7,10 +7,33 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Mitoshi CryptoLotto ICO</title>
   <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
-  <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
-	<link href="css/style.min.css?v=3" rel="stylesheet">
+  <link rel="icon" href="favicon.ico?v=3" type="image/x-icon">
+	<link href="css/style.min.css?v=5" rel="stylesheet">
 </head>
 <body>
+<div id="buyTokensModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div>
+      <p>
+        You are just 120 seconds away...
+        <br><br>
+        <b>To participating in our Token Sale</b>
+        <br><br>
+        Welcome!
+        <br><br>
+        If you wish to reserve a slot, fill in the form below so you can enjoy winning with Mitoshi:
+      </p>
+      <form action="php/white-list.php" class="buy-tokens-form" method="post">
+        <input required="" type="text" maxlength="15" name="name" placeholder="Name">
+        <input required="" type="text" maxlength="15" name="country" placeholder="Country">
+        <input required="" type="email" name="email" maxlength="30" placeholder="Email Address">
+        <input required="" type="number" name="phone" placeholder="Phone Number">
+        <input type="submit" value="Participate" class="modal-submit">
+      </form>
+    </div>
+  </div>
+</div>
 	<div class="page-wrapper">
 		<header class="header">
       <div class="header__wrapper">
@@ -789,6 +812,6 @@
     </footer>
 	</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="js/main.js?v=2"></script>
+	<script src="js/main.js?v=3"></script>
 </body>
 </html>

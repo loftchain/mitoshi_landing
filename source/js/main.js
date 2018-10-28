@@ -4,6 +4,9 @@ $(document).ready(function() {
   var popup = $('.header__toggle');
   var menu = $('.header__group');
   var linkCollection = document.querySelectorAll('.main-nav__item a');
+  var buyTokensModal = $('#buyTokensModal');
+  var buyTokensBtn = $('.header__button');
+  var closeModal = $('.close-modal');
 
   $(document).on('scroll', onScroll);
 
@@ -65,9 +68,40 @@ $(document).ready(function() {
       }
     });
   }
-
   popup.click(function() {
     popup.toggleClass('header__toggle--active');
     menu.toggleClass('header__group--active');
+  });
+
+
+
+//--------------------------------------------------
+
+  $(document).ready(function () {
+    buyTokensBtn.click(function () {
+      buyTokensModal.css('display', 'flex');
+    });
+
+    closeModal.click(function () {
+      buyTokensModal.css('display', 'none');
+    });
+
+    $(window).click(function (event) {
+      if (event.target.id == 'buyTokensModal') {
+        buyTokensModal.css('display', 'none');
+      }
+    });
+
+    $(".buy-tokens-form").submit(function () {
+      $.ajax({
+        type: "POST",
+        url: "php/white-list.php",
+        data: $(this).serialize(),
+      }).done(function (data) {
+        buyTokensModal.css('display', 'none');
+        alert('You have been added to the Whitelist.');
+      });
+      return false;
+    });
   });
 });
