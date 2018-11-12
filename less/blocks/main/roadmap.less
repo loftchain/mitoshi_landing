@@ -1,0 +1,281 @@
+.roadmap {
+  position: relative;
+  min-height: 820px;
+}
+
+.roadmap__img-wrap {
+  position: absolute;
+  max-width: 1139px;
+  height: 594px;
+  width: 100%;
+  top: 245px;
+  left: 0;
+  z-index: 1;
+}
+
+.roadmap__img-wrap img {
+  height: 594px;
+}
+
+.roadmap__list {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--start {
+    width: 960px;
+    top: 210px;
+    left: 0;
+  }
+
+  &--center {
+    flex-direction: row-reverse;
+    width: 720px;
+    top: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &--end {
+    width: 960px;
+    top: 765px;
+    right: 0;
+  }
+}
+
+.roadmap__item {
+  box-sizing: border-box;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 259px;
+  min-height: 126px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.14);
+  border-radius: 100px;
+}
+
+.roadmap__list--start .roadmap__item {
+  &--medium {
+    width: 23%;
+  }
+
+  &--big {
+    width: 26%;
+  }
+}
+
+.roadmap__list--center .roadmap__item {
+  width: 30%;
+}
+
+.roadmap__list--end .roadmap__item {
+  &--little {
+    width: 19%;
+  }
+
+  &--medium {
+    width: 22%;
+  }
+
+  &--big {
+    width: 28.5%;
+  }
+}
+
+.roadmap__subtitle {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+}
+
+.roadmap__sublist {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 20px;
+}
+
+.roadmap__sublist-item {
+  position: relative;
+  padding-left: 10px;
+  font-size: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 5px;
+    height: 5px;
+    background-color: #fbb41e;
+    border-radius: 50%;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .roadmap {
+    min-height: 700px;
+  }
+  .roadmap__img-wrap {
+    height: 500px;
+    top: 210px;
+  }
+
+  .roadmap__img-wrap img {
+    height: 500px;
+  }
+
+  .roadmap__list {
+    &--start {
+      width: 738px;
+      top: 190px;
+      left: 0;
+    }
+
+    &--center {
+      width: 560px;
+      top: 410px;
+    }
+
+    &--end {
+      width: 738px;
+      top: 650px;
+    }
+  }
+
+  .roadmap__item {
+    min-height: 120px;
+    border-radius: 55px;
+
+    span {
+      display: block;
+    }
+  }
+
+  .roadmap__list--start .roadmap__item {
+    &--medium {
+      width: 24%;
+    }
+  }
+
+  .roadmap__list--end .roadmap__item {
+    &--little {
+      width: 19%;
+    }
+
+    &--medium {
+      width: 20%;
+    }
+
+    &--big {
+      width: 30.5%;
+
+      .roadmap__sublist-item {
+        padding-left: 21px;
+
+        &::before {
+          left: 12px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .roadmap {
+    min-height: auto;
+  }
+
+  .roadmap__img-wrap {
+    display: none;
+  }
+
+  .roadmap__list {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+
+    &--start {
+      width: auto;
+    }
+
+    &--center {
+      width: auto;
+      transform: translateX(0);
+    }
+
+    &--end {
+      width: auto;
+    }
+  }
+
+  .roadmap__item {
+    position: relative;
+    width: 290px !important;
+    min-height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 25px;
+      width: 15px;
+      background-color: #fbb41e;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -25px;
+      left: 55%;
+      transform: translateX(-50%);
+      height: 25px;
+      width: 10px;
+      background-color: transparent;
+      border-right: 1px dotted #fbb41e;
+    }
+  }
+
+  .roadmap__list--start .roadmap__item {
+    &--medium {
+      width: 24%;
+    }
+  }
+
+  .roadmap__list--end .roadmap__item {
+    &--big {
+      .roadmap__sublist-item {
+        padding-left: 10px;
+
+        &::before {
+          left: 0;
+        }
+      }
+    }
+  }
+
+  .roadmap__list--end .roadmap__item:last-child {
+    margin-bottom: 0;
+
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+}

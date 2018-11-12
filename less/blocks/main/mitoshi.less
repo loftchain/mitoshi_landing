@@ -1,0 +1,188 @@
+.mitoshi {
+  padding-top: 250px;
+  padding-bottom: 180px;
+  background-image: url(../images/mitoshi-bg-bottom.png);
+  background-repeat: no-repeat;
+  background-position: 27% bottom;
+  background-size: auto;
+}
+
+.mitoshi__desc {
+  max-width: 540px;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.mitoshi__text {
+  margin: 0;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mitoshi__button-group {
+  width: 420px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mitoshi__button {
+  font-family: 'Rubik', 'Arial', sans-serif;
+  box-sizing: border-box;
+  width: 190px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  line-height: 20px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.1s;
+
+  &--transparent {
+    text-align: center;
+    color: #4f4f4f;
+    background: none;
+    border: 1px solid #ffc700;
+    transition: box-shadow 0.1s;
+
+    &:hover {
+      background: linear-gradient(91.95deg, #ffc701 0.35%, #ffe13a 99.76%);
+      box-shadow: 0 0 20px #ffc700;
+      border: 1px solid transparent;
+      color: #ffffff;
+    }
+  }
+
+  &--gold {
+    text-align: right;
+    position: relative;
+    color: #ffffff;
+    background: linear-gradient(90deg, #ffc700 5.65%, #ffe13a 95.2%);
+    box-shadow: 0 0 20px #ffffff;
+
+    &:hover {
+      box-shadow: 0 0 20px #ffc700;
+    }
+  }
+
+  &--right {
+    padding-right: 40px;
+  }
+}
+
+.mitoshi__button--gold::before,
+.mitoshi__button--tel::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 20px;
+  background-image: url(../images/telegram.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-height: 1000px) {
+  .mitoshi {
+    padding-top: 220px;
+  }
+}
+
+@media (max-height: 950px) {
+  .mitoshi {
+    padding-top: 200px;
+  }
+}
+
+@media (max-height: 900px) {
+  .mitoshi {
+    padding-top: 180px;
+  }
+}
+
+@media (max-height: 850px) {
+  .mitoshi {
+    padding-top: 150px;
+  }
+}
+
+@media (max-height: 800px) {
+  .mitoshi {
+    padding-top: 130px;
+  }
+}
+
+@media (max-height: 750px) {
+  .mitoshi {
+    padding-top: 110px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .mitoshi {
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .mitoshi {
+    background-position: 50% bottom;
+    background-size: 200px auto;
+  }
+
+  .mitoshi__text {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mitoshi__text {
+    margin-bottom: 20px;
+  }
+
+  .mitoshi__button {
+    padding: 12px 14px 10px;
+    line-height: 18px;
+
+    &--right {
+      padding-right: 40px;
+    }
+  }
+
+}
+
+@media (max-width: 575px) {
+  .mitoshi {
+    padding-bottom: 0;
+    background-image: none;
+  }
+
+  .mitoshi__button-group {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 290px;
+  }
+
+  .mitoshi__button {
+    padding: 7px 20px;
+    line-height: 18px;
+
+    &--gold {
+      padding-left: 30px;
+    }
+
+    &--right {
+      text-align: center;
+    }
+  }
+
+  .mitoshi__button--gold::before {
+    left: 8px;
+  }
+}
