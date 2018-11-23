@@ -77,31 +77,31 @@ $(document).ready(function() {
 
 //--------------------------------------------------
 
-  $(document).ready(function () {
-    buyTokensBtn.click(function () {
-      buyTokensModal.css('display', 'flex');
-    });
-
-    closeModal.click(function () {
-      buyTokensModal.css('display', 'none');
-    });
-
-    $(window).click(function (event) {
-      if (event.target.id == 'buyTokensModal') {
-        buyTokensModal.css('display', 'none');
-      }
-    });
-
-    $(".buy-tokens-form").submit(function () {
-      $.ajax({
-        type: "POST",
-        url: "php/white-list.php",
-        data: $(this).serialize(),
-      }).done(function (data) {
-        buyTokensModal.css('display', 'none');
-        alert('You have been added to the Whitelist.');
-      });
-      return false;
-    });
-  });
+  // $(document).ready(function () {
+  //   buyTokensBtn.click(function () {
+  //     buyTokensModal.css('display', 'flex');
+  //   });
+  //
+  //   closeModal.click(function () {
+  //     buyTokensModal.css('display', 'none');
+  //   });
+  //
+  //   $(window).click(function (event) {
+  //     if (event.target.id == 'buyTokensModal') {
+  //       buyTokensModal.css('display', 'none');
+  //     }
+  //   });
+  //
+  //   $(".buy-tokens-form").submit(function () {
+  //     $.ajax({
+  //       type: "POST",
+  //       url: "php/white-list.php",
+  //       data: $(this).serialize(),
+  //     }).done(function (data) {
+  //       buyTokensModal.css('display', 'none');
+  //       alert('You have been added to the Whitelist.');
+  //     });
+  //     return false;
+  //   });
+  // });
 });

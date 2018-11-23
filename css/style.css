@@ -335,6 +335,8 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 .header__button {
+  display: flex;
+  justify-content: center;
   font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
   padding: 10px;
