@@ -156,6 +156,12 @@ template {
 @font-face {
   font-family: 'Rajdhani';
   font-style: normal;
+  font-weight: 500;
+  src: local('Rajdhani Medium'), local('Rajdhani-Medium'), url(https://fonts.gstatic.com/s/rajdhani/v7/LDI2apCSOBg7S-QT7pb0EPOreeI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Rajdhani';
+  font-style: normal;
   font-weight: 700;
   src: local('Rajdhani Bold'), local('Rajdhani-Bold'), url(https://fonts.gstatic.com/s/rajdhani/v7/LDI2apCSOBg7S-QT7pa8FvOreeI.ttf) format('truetype');
 }
@@ -169,6 +175,7 @@ body {
   padding: 0;
   font-family: 'Rajdhani', 'Arial', sans-serif;
   font-size: 15px;
+  font-weight: 500;
   line-height: 22px;
   color: #4f4f4f;
   background-color: #ffffff;
