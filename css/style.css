@@ -148,22 +148,16 @@ template {
   display: none;
 }
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Rajdhani';
   font-style: normal;
   font-weight: 400;
-  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v7/iJWKBXyIfDnIV7nBrXk.ttf) format('truetype');
+  src: local('Rajdhani Regular'), local('Rajdhani-Regular'), url(https://fonts.gstatic.com/s/rajdhani/v7/LDIxapCSOBg7S-QT7p4HM-M.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Rajdhani';
   font-style: normal;
   font-weight: 700;
-  src: local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7F6iGmd8WU.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Crimson Text';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url(https://fonts.gstatic.com/s/crimsontext/v8/wlp2gwHKFkZgtmSR3NB0oRJfbwhW.ttf) format('truetype');
+  src: local('Rajdhani Bold'), local('Rajdhani-Bold'), url(https://fonts.gstatic.com/s/rajdhani/v7/LDI2apCSOBg7S-QT7pa8FvOreeI.ttf) format('truetype');
 }
 html,
 body {
@@ -173,8 +167,8 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: 'Rubik', 'Arial', sans-serif;
-  font-size: 14px;
+  font-family: 'Rajdhani', 'Arial', sans-serif;
+  font-size: 15px;
   line-height: 22px;
   color: #4f4f4f;
   background-color: #ffffff;
