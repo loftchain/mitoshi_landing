@@ -526,7 +526,7 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 20px #ffc700;
 }
 .mitoshi__button--right {
-  padding-right: 40px;
+  padding-right: 30px;
 }
 .mitoshi__button--gold::before,
 .mitoshi__button--tel::before {
@@ -596,7 +596,7 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
   }
   .mitoshi__button--right {
-    padding-right: 40px;
+    padding-right: 30px;
   }
 }
 @media (max-width: 575px) {
