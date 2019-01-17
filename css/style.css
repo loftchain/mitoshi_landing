@@ -412,6 +412,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-transform: capitalize;
 }
 .main-nav__item {
   margin-right: 22px;
