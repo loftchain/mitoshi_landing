@@ -705,11 +705,18 @@ textarea {
 .about__text:not(.about__text--strong) {
   margin-bottom: 30px;
 }
+.about__buttons-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -3px;
+}
 .about__button {
   display: inline-block;
   font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
-  padding: 12px 26px 10px;
+  margin: 0 3px;
+  margin-bottom: 5px;
+  padding: 12px 22px 10px;
   line-height: 18px;
   color: #ffffff;
   background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
