@@ -43,6 +43,16 @@
                title="Mitoshi CryptoLotto ICO">
         </a>
         <button class="header__toggle"></button>
+        <div class="dropdown header__language">
+          <button class="header__button">Lang</button>
+          <div class="dropdown-content">
+            <a>Chinese</a>
+            <a>Russian</a>
+            <a>Spanish</a>
+            <a>Korean</a>
+            <a>Japanese</a>
+          </div>
+        </div>
         <div class="header__group">
           <nav class="main-nav">
             <ul class="main-nav__list">
@@ -184,22 +194,22 @@
             </h3>
             <p class="about__sale-status">
               Sales Status:
-              <span class="about__sale-hardcap">999</span>
+              <span class="about__sale-hardcap"></span>
               USD
             </p>
             <ul class="about__sale-list">
               <li class="about__sale-item">
                 <img class="about__sale-icon" src="images/sale/btc.svg" alt="BTC">
                 <p>
-                  1 BTC =
-                  <span class="about__sale-btc">2</span>
+                  BTC =
+                  <span class="about__sale-btc"></span>
                 </p>
                 <a class="about__join-link" href="https://investor.mitoshi.io/login" target="_blank">Join Now</a>
               </li>
               <li class="about__sale-item">
                 <img class="about__sale-icon" src="images/sale/eth.svg" alt="ETH">
                 <p>
-                  1 ETH = <span class="about__sale-eth">3</span>
+                  ETH = <span class="about__sale-eth"></span>
                 </p>
                 <p>
                   <a class="about__join-link" href="https://investor.mitoshi.io/login" target="_blank">Join Now</a>
@@ -927,5 +937,27 @@
 	</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/main.js?v=3"></script>
+  <script>
+    const socket = new WebSocket('ws://46.101.114.134:8080');
+    socket.onopen = function () {
+      console.log('Connected');
+      socket.send(JSON.stringify({
+        event: 'mitoshi',
+        data: 'mitoshi',
+      }));
+
+      socket.onmessage = function (data) {
+        const sumAmount = JSON.parse(data.data);
+        console.log(sumAmount);
+        const aboutSection = document.body.querySelector('.about');
+        const sum = aboutSection.querySelector('.about__sale-hardcap');
+        const btc = aboutSection.querySelector('.about__sale-btc');
+        const eth = aboutSection.querySelector('.about__sale-eth');
+        sum.textContent = (sumAmount.btcUsd + sumAmount.ethUsd).toFixed(2);
+        btc.textContent = sumAmount.btc.toFixed(4);
+        eth.textContent = sumAmount.eth.toFixed(4);
+      }};
+
+  </script>
 </body>
 </html>
