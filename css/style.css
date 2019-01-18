@@ -1792,9 +1792,6 @@ textarea {
   align-items: center;
   text-align: center;
 }
-.team__list-item--executive {
-  margin-right: 60px;
-}
 .team__img-wrap {
   position: relative;
   display: flex;
