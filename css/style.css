@@ -946,10 +946,17 @@ textarea {
 .sale__table-data--right {
   width: 180px;
 }
+.sale__buttons-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -3px;
+}
 .sale__button {
   font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
-  padding: 12px 37px 10px;
+  margin: 0 3px;
+  margin-bottom: 10px;
+  padding: 12px 30px 10px;
   line-height: 18px;
   color: #4f4f4f;
   border: 1px solid #ffc700;
