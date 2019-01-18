@@ -10,25 +10,8 @@
   <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
   <link rel="icon" href="favicon.ico?v=3" type="image/x-icon">
 	<link href="css/style.min.css?v=7" rel="stylesheet">
-  <!--<style>-->
-    <!--.wrap {-->
-      <!--width: 50%;-->
-    <!--}-->
-    <!--.wrapper {-->
-      <!--position: relative;-->
-      <!--padding-bottom: 56.25%; /* 16:9 */-->
-      <!--padding-top: 25px;-->
-      <!--height: 0;-->
-    <!--}-->
-
-    <!--.wrapper iframe {-->
-      <!--position: absolute;-->
-      <!--top: 0;-->
-      <!--left: 0;-->
-      <!--width: 100%;-->
-      <!--height: 100%;-->
-    <!--}-->
-  <!--</style>-->
+  <style>
+  </style>
 </head>
 <body>
 <div id="buyTokensModal" class="modal">
@@ -474,6 +457,20 @@
             <p class="solution__text">
               Furthermore, decentralized technology is a way to work around regulatory policies that inhibit the growth of the lotto industry while making its market much more expandable and involved. Mitoshi CryptoLotto will then be accessible anytime, anywhere with the ease of transaction provided through cryptocurrency via blockchain technology.
             </p>
+          </div>
+          <div class="solution__video-wrapper">
+            <div class="solution__video solution__js-video">
+              <!-- YouTube iframe. -->
+              <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+              <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+              <iframe class="solution__iframe solution__js-iframe" src=""
+                      frameborder="0" allowTransparency="true" allowfullscreen
+                      data-src="https://www.youtube.com/embed/nxCJ80f2_sU">
+
+              </iframe>
+              <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+              <button class="solution__iframe-btn solution__js-iframe-btn">Play video</button>
+            </div>
           </div>
           <a class="solution__button" href="files/Features.pdf" target="_blank">
             Mitoshi CryptoLotto Features
@@ -932,12 +929,8 @@
             </p>
           </div>
         </section>
-        <!--<div class="wrap">-->
-          <!--<div class="wrapper">-->
-            <!--<iframe width="560" height="349" src="https://www.youtube.com/embed/nxCJ80f2_sU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
@@ -990,5 +983,40 @@
       }};
 
   </script>
+  <script>
+  // poster frame click event
+  $(document).on('click','.solution__js-iframe-btn',function(ev) {
+    ev.preventDefault();
+    var $poster = $(this);
+    var $wrapper = $poster.closest('.solution__js-video');
+    videoPlay($wrapper);
+  });
+
+  // play the targeted video (and hide the poster frame)
+  function videoPlay($wrapper) {
+    var $iframe = $wrapper.find('.solution__js-iframe');
+    var src = $iframe.data('src');
+    // hide poster
+    $wrapper.addClass('videoWrapperActive');
+    // add iframe src in, starting the video
+    $iframe.attr('src',src);
+  }
+
+  // stop the targeted/all videos (and re-instate the poster frames)
+  function videoStop($wrapper) {
+    // if we're stopping all videos on page
+    if (!$wrapper) {
+      var $wrapper = $('.solution__js-video');
+      var $iframe = $('.solution__js-iframe');
+      // if we're stopping a particular video
+    } else {
+      var $iframe = $wrapper.find('solution__js-iframe');
+    }
+    // reveal poster
+    $wrapper.removeClass('videoWrapperActive');
+    // remove youtube link, stopping the video from playing in the background
+    $iframe.attr('src','');
+  }
+</script>
 </body>
 </html>
