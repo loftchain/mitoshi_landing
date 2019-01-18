@@ -249,9 +249,6 @@ select,
 textarea {
   font-family: 'Rajdhani', 'Arial', sans-serif;
 }
-.wrap {
-  width: 55%;
-}
 @media (max-width: 991px) {
   section {
     padding-top: 80px;
@@ -549,7 +546,6 @@ textarea {
   justify-content: space-between;
 }
 .mitoshi__button {
-  font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
   width: 190px;
   margin-bottom: 15px;
@@ -715,7 +711,6 @@ textarea {
 }
 .about__button {
   display: inline-block;
-  font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
   margin: 0 3px;
   margin-bottom: 5px;
@@ -955,7 +950,6 @@ textarea {
   margin: 0 -3px;
 }
 .sale__button {
-  font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
   margin: 0 3px;
   margin-bottom: 10px;
@@ -1304,7 +1298,6 @@ textarea {
   max-width: 250px;
   display: inline-block;
   margin-top: 30px;
-  font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
   padding: 12px 26px 10px;
   line-height: 18px;
@@ -1461,7 +1454,6 @@ textarea {
 .how__button {
   display: inline-block;
   margin-top: 30px;
-  font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
   padding: 12px 26px 10px;
   line-height: 18px;
@@ -1957,7 +1949,6 @@ textarea {
   background-position: center;
 }
 .contacts__button {
-  font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
   padding: 12px 26px 10px;
   line-height: 18px;
@@ -2231,7 +2222,6 @@ input {
   color: #fff;
   background: linear-gradient(90deg, #ffc700 5.65%, #ffe13a 95.2%);
   box-shadow: 0 0 20px #fff;
-  font-family: 'Rubik', 'Arial', sans-serif;
   box-sizing: border-box;
   width: 200px;
   margin-bottom: 15px;
