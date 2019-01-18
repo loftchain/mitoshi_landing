@@ -14,25 +14,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
   <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
   <link rel="icon" href="favicon.ico?v=3" type="image/x-icon">
 	<link href="css/style.min.css?v=7" rel="stylesheet">
-  <!--<style>-->
-    <!--.wrap {-->
-      <!--width: 50%;-->
-    <!--}-->
-    <!--.wrapper {-->
-      <!--position: relative;-->
-      <!--padding-bottom: 56.25%; /* 16:9 */-->
-      <!--padding-top: 25px;-->
-      <!--height: 0;-->
-    <!--}-->
-
-    <!--.wrapper iframe {-->
-      <!--position: absolute;-->
-      <!--top: 0;-->
-      <!--left: 0;-->
-      <!--width: 100%;-->
-      <!--height: 100%;-->
-    <!--}-->
-  <!--</style>-->
+  <style>
+  </style>
 </head>
 <body>
 <div id="buyTokensModal" class="modal">
@@ -62,8 +45,11 @@ require_once (__DIR__ . '/php/bootstrap.php');
 		<header class="header">
       <div class="header__wrapper">
         <a class="header__logo">
-          <img src="images/logo.png" width="60" height="60" alt="Mitoshi CryptoLotto ICO"
-               title="Mitoshi CryptoLotto ICO">
+          <picture>
+            <source srcset="images/logo.webp" width="60" height="60" type="image/webp">
+            <source srcset="images/logo.png" width="60" height="60" type="image/png">
+            <img src="images/logo.png" width="60" height="60" alt="Mitoshi CryptoLotto ICO" title="Mitoshi CryptoLotto ICO">
+          </picture>
         </a>
         <button class="header__toggle"></button>
         <div class="dropdown header__language">
@@ -192,7 +178,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/rating/top-token-sales.svg" alt="TopTokenSale">
                   </dt>
                   <dd>
-                    <img src="images/rating/rated-star-40.png" alt="Rating">
+                    <img src="images/rating/rated-star-30.png" alt="Rating">
                     <p>3,0</p>
                   </dd>
                 </dl>
@@ -480,6 +466,20 @@ require_once (__DIR__ . '/php/bootstrap.php');
               Furthermore, decentralized technology is a way to work around regulatory policies that inhibit the growth of the lotto industry while making its market much more expandable and involved. Mitoshi CryptoLotto will then be accessible anytime, anywhere with the ease of transaction provided through cryptocurrency via blockchain technology.
             </p>
           </div>
+          <div class="solution__video-wrapper">
+            <div class="solution__video solution__js-video">
+              <!-- YouTube iframe. -->
+              <!-- note the iframe src is empty by default, the url is in the data-src="" argument -->
+              <!-- also note the arguments on the url, to autoplay video, remove youtube adverts/dodgy links to other videos, and set the interface language -->
+              <iframe class="solution__iframe solution__js-iframe" src=""
+                      frameborder="0" allowTransparency="true" allowfullscreen
+                      data-src="https://www.youtube.com/embed/nxCJ80f2_sU">
+
+              </iframe>
+              <!-- the poster frame - in the form of a button to make it keyboard accessible -->
+              <button class="solution__iframe-btn solution__js-iframe-btn">Play video</button>
+            </div>
+          </div>
           <a class="solution__button" href="files/Features.pdf" target="_blank">
             Mitoshi CryptoLotto Features
           </a>
@@ -619,58 +619,53 @@ require_once (__DIR__ . '/php/bootstrap.php');
           </h2>
           <div class="team__block">
             <h4 class="team__subtitle">
-              Executive
-              <span>team</span>
+              Executive &
+              <span>Management</span>
+              <span>Team</span>
             </h4>
             <ul class="team__list team__list--executive">
               <li class="team__list-item team__list-item--executive">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/tc-picardo-8917a8165/" target="_blank">
-                  <img src="images/team-1.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-1.webp" type="image/webp">
+                    <source srcset="images/team-1.png" type="image/png">
+                    <img src="images/team-1.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">TC Picardo</p>
                 <p class="team__member-occup">CEO & Founder</p>
               </li>
               <li class="team__list-item team__list-item--executive">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/normanvelasco/" target="_blank">
-                  <img src="images/team-2.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-2.webp" type="image/webp">
+                    <source srcset="images/team-2.png" type="image/png">
+                    <img src="images/team-2.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Norman Velasco</p>
                 <p class="team__member-occup">COO & Co-Founder</p>
               </li>
-            </ul>
-          </div>
-          <div class="team__block">
-            <h4 class="team__subtitle">
-              Management
-              <span>team</span>
-            </h4>
-            <ul class="team__list team__list--management">
-              <li class="team__list-item team__list-item--management">
-                <a class="team__img-wrap" href="https://www.linkedin.com/in/nikita-melnikov-a71a06b8/" target="_blank">
-                  <img src="images/team-3.png" alt="Member of Mithoshi Team">
-                </a>
-                <p class="team__member-name">Nikita Melnikov</p>
-                <p class="team__member-occup">Blockchain & Smart Contract Advisor</p>
-              </li>
-              <li class="team__list-item team__list-item--management">
-                <a class="team__img-wrap" href="https://www.linkedin.com/in/kim-zafra-el-jugador-53393037/" target="_blank">
-                  <img src="images/team-4.png" alt="Member of Mithoshi Team">
-                </a>
-                <p class="team__member-name">Kim Zafra</p>
-                <p class="team__member-occup">Technical Game Advisor / Game Mathematecian</p>
-              </li>
-              <li class="team__list-item team__list-item--management">
+              <li class="team__list-item team__list-item--executive">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/rob-natthavong-jumchai-1a4067172/" target="_blank">
-                  <img src="images/team-5.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-5.webp" type="image/webp">
+                    <source srcset="images/team-5.png" type="image/png">
+                    <img src="images/team-5.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
-                <p class="team__member-name">Natthavong Jumchai</p>
+                <p class="team__member-name">Robert Natthavong Jumchai</p>
                 <p class="team__member-occup">
-                  Business Development Director
+                  Chief Business Development Officer
                 </p>
               </li>
-              <li class="team__list-item team__list-item--management">
+              <li class="team__list-item team__list-item--executive">
                 <a class="team__img-wrap" href="#" target="_blank">
-                  <img src="images/team-6.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-6.webp" type="image/webp">
+                    <source srcset="images/team-6.png" type="image/png">
+                    <img src="images/team-6.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Charles Greenwood</p>
                 <p class="team__member-occup">
@@ -679,7 +674,11 @@ require_once (__DIR__ . '/php/bootstrap.php');
               </li>
               <li class="team__list-item team__list-item--management">
                 <a class="team__img-wrap" href="#" target="_blank">
-                  <img src="images/team-7.jpg" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-7.webp" type="image/webp">
+                    <source srcset="images/team-7.jpg" type="image/jpeg">
+                    <img src="images/team-7.jpg" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Jocelyn Peralta</p>
                 <p class="team__member-occup">
@@ -696,28 +695,44 @@ require_once (__DIR__ . '/php/bootstrap.php');
             <ul class="team__list team__list--development">
               <li class="team__list-item team__list-item--development">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/sergey-provalinski-0b8204162/" target="_blank">
-                  <img src="images/team-9.jpg" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-9.webp" type="image/webp">
+                    <source srcset="images/team-9.jpg" type="image/jpeg">
+                    <img src="images/team-9.jpg" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Sergey Provalinski</p>
                 <p class="team__member-occup">Front-end Developer</p>
               </li>
               <li class="team__list-item team__list-item--development">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D0%BF%D0%BE%D0%B4%D1%80%D0%B5%D0%B7%D0%BE%D0%B2-b3328a173/" target="_blank">
-                  <img src="images/team-10.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-10.webp" type="image/webp">
+                    <source srcset="images/team-10.png" type="image/png">
+                    <img src="images/team-10.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Alexander Podrezov</p>
                 <p class="team__member-occup">Back-end Developer</p>
               </li>
               <li class="team__list-item team__list-item--development">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/blockchainwork/" target="_blank">
-                  <img src="images/team-11.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-11.webp" type="image/webp">
+                    <source srcset="images/team-11.png" type="image/png">
+                    <img src="images/team-11.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Kalinouski Konstantin</p>
                 <p class="team__member-occup">Protocol Architect</p>
               </li>
               <li class="team__list-item team__list-item--development">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/julia-drobnitsa/" target="_blank">
-                  <img src="images/team-12.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-12.webp" type="image/webp">
+                    <source srcset="images/team-12.png" type="image/png">
+                    <img src="images/team-12.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Julia Drobnitsa</p>
                 <p class="team__member-occup">UX / IU Designer</p>
@@ -732,106 +747,200 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </h4>
             <ul class="team__list team__list--pr">
               <!--<li class="team__list-item team__list-item&#45;&#45;pr">-->
-                <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/juri-verbitski-90967584/" target="_blank">-->
-                  <!--<img src="images/team-13.png" alt="Member of Mithoshi Team">-->
-                <!--</a>-->
-                <!--<p class="team__member-name">Juri Verbitski</p>-->
-                <!--<p class="team__member-occup">PR & Digital Marketing</p>-->
+              <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/juri-verbitski-90967584/" target="_blank">-->
+              <!--<img src="images/team-13.png" alt="Member of Mithoshi Team">-->
+              <!--</a>-->
+              <!--<p class="team__member-name">Juri Verbitski</p>-->
+              <!--<p class="team__member-occup">PR & Digital Marketing</p>-->
               <!--</li>-->
               <li class="team__list-item team__list-item--pr">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/jerickalcancia/" target="_blank">
-                  <img src="images/team-14.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-14.webp" type="image/webp">
+                    <source srcset="images/team-14.png" type="image/png">
+                    <img src="images/team-14.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Jerick Alcancia</p>
                 <p class="team__member-occup">Motion Graphic Artist</p>
               </li>
               <!--<li class="team__list-item team__list-item&#45;&#45;pr">-->
-                <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/randy-pagatpatan-b773a388/" target="_blank">-->
-                  <!--<img src="images/team-15.jpg" alt="Member of Mithoshi Team">-->
-                <!--</a>-->
-                <!--<p class="team__member-name">Randy Pagatpatan</p>-->
-                <!--<p class="team__member-occup">Graphic Design</p>-->
+              <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/randy-pagatpatan-b773a388/" target="_blank">-->
+              <!--<img src="images/team-15.jpg" alt="Member of Mithoshi Team">-->
+              <!--</a>-->
+              <!--<p class="team__member-name">Randy Pagatpatan</p>-->
+              <!--<p class="team__member-occup">Graphic Design</p>-->
               <!--</li>-->
               <li class="team__list-item team__list-item--pr">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/rmcccos/" target="_blank">
-                  <img src="images/team-16.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-16.webp" type="image/webp">
+                    <source srcset="images/team-16.png" type="image/png">
+                    <img src="images/team-16.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Rowena Ma. Clara Cos</p>
                 <p class="team__member-occup">Copywriter</p>
               </li>
             </ul>
           </div>
+          <!--<div class="team__block">-->
+            <!--<h4 class="team__subtitle">-->
+              <!--Management-->
+              <!--<span>team</span>-->
+            <!--</h4>-->
+            <!--<ul class="team__list team__list&#45;&#45;management">-->
+              <!--<li class="team__list-item team__list-item&#45;&#45;management">-->
+                <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/nikita-melnikov-a71a06b8/" target="_blank">-->
+                  <!--<img src="images/team-3.png" alt="Member of Mithoshi Team">-->
+                <!--</a>-->
+                <!--<p class="team__member-name">Nikita Melnikov</p>-->
+                <!--<p class="team__member-occup">Blockchain & Smart Contract Advisor</p>-->
+              <!--</li>-->
+              <!--<li class="team__list-item team__list-item&#45;&#45;management">-->
+                <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/kim-zafra-el-jugador-53393037/" target="_blank">-->
+                  <!--<img src="images/team-4.png" alt="Member of Mithoshi Team">-->
+                <!--</a>-->
+                <!--<p class="team__member-name">Kim Zafra</p>-->
+                <!--<p class="team__member-occup">Technical Game Advisor / Game Mathematecian</p>-->
+              <!--</li>-->
+            <!--</ul>-->
+          <!--</div>-->
           <div class="team__block">
             <h4 class="team__subtitle">
-              Community &
+              Community,
               <span>Social Media</span>
-              <span>Management</span>
+              <span> and Bounty Management</span>
             </h4>
             <ul class="team__list team__list--media">
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/kashif-syed-b09003139/" target="_blank">
-                  <img src="images/team-17.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-17.webp" type="image/webp">
+                    <source srcset="images/team-17.png" type="image/png">
+                    <img src="images/team-17.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Kashif Syed</p>
                 <p class="team__member-occup">Social Media Management</p>
               </li>
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/raizalyn-razo/" target="_blank">
-                  <img src="images/team-18.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-18.webp" type="image/webp">
+                    <source srcset="images/team-18.png" type="image/png">
+                    <img src="images/team-18.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Raizalyn Razo</p>
                 <p class="team__member-occup">Community Management</p>
               </li>
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/celeste-paras-79947b6a/" target="_blank">
-                  <img src="images/team-19.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-19.webp" type="image/webp">
+                    <source srcset="images/team-19.png" type="image/png">
+                    <img src="images/team-19.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Celeste Paras</p>
                 <p class="team__member-occup">Community Management (English)</p>
               </li>
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/chen-chee-fah-783110142/" target="_blank">
-                  <img src="images/team-20.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-20.webp" type="image/webp">
+                    <source srcset="images/team-20.png" type="image/png">
+                    <img src="images/team-20.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Chen Chee Fah</p>
                 <p class="team__member-occup">Community Management (Mandarin)</p>
               </li>
-              <!--<li class="team__list-item team__list-item&#45;&#45;media">-->
-                <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/gracious-grace-06b5a716b/" target="_blank">-->
-                  <!--<img src="images/team-21.png" alt="Member of Mithoshi Team">-->
-                <!--</a>-->
-                <!--<p class="team__member-name">Gracious Ezendu</p>-->
-                <!--<p class="team__member-occup">Community Management</p>-->
-              <!--</li>-->
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/awele-kimberly-ajiduah-8981a075/" target="_blank">
-                  <img src="images/team-22.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-22.webp" type="image/webp">
+                    <source srcset="images/team-22.png" type="image/png">
+                    <img src="images/team-22.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Awele Kimberly Ajiduah</p>
                 <p class="team__member-occup">Content Management</p>
               </li>
               <li class="team__list-item team__list-item--media">
+                <a class="team__img-wrap" href="https://www.linkedin.com/in/hazel-olivar-58ba23133/" target="_blank">
+                  <picture>
+                    <source srcset="images/team-24.webp" type="image/webp">
+                    <source srcset="images/team-24.png" type="image/png">
+                    <img src="images/team-24.png" alt="Member of Mithoshi Team">
+                  </picture>
+                </a>
+                <p class="team__member-name">Hazel Olivar</p>
+                <p class="team__member-occup">Community Management</p>
+              </li>
+              <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/philip-smart-43898b169/" target="_blank">
-                  <img src="images/team-23.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/team-23.webp" type="image/webp">
+                    <source srcset="images/team-23.png" type="image/png">
+                    <img src="images/team-23.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Philip Smart Kolawole</p>
                 <p class="team__member-occup">Community Management</p>
               </li>
               <li class="team__list-item team__list-item--media">
-                <a class="team__img-wrap" href="https://www.linkedin.com/in/hazel-olivar-58ba23133/" target="_blank">
-                  <img src="images/team-24.png" alt="Member of Mithoshi Team">
+                <a class="team__img-wrap" href=https://www.linkedin.com/in/kris-manalo-793173175/" target="_blank">
+                  <picture>
+                    <source srcset="images/team-27.webp" type="image/webp">
+                    <source srcset="images/team-27.jpg" type="image/jpeg">
+                    <img src="images/team-27.jpg" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
-                <p class="team__member-name">Hazel Olivar</p>
+                <p class="team__member-name">Kris Manalo</p>
+                <p class="team__member-occup">Community Management</p>
+              </li>
+              <li class="team__list-item team__list-item--media">
+                <a class="team__img-wrap" href=https://www.linkedin.com/in/geneva-padua-b93646b1/" target="_blank">
+                  <picture>
+                    <source srcset="images/team-28.webp" type="image/webp">
+                    <source srcset="images/team-28.jpg" type="image/jpeg">
+                    <img src="images/team-28.jpg" alt="Member of Mithoshi Team">
+                  </picture>
+                </a>
+                <p class="team__member-name">Geneva Padua</p>
                 <p class="team__member-occup">Community Management</p>
               </li>
             </ul>
           </div>
-
-          <!--<div class="team__block">-->
-            <!--<h4 class="team__subtitle">-->
-              <!--Advisors-->
-            <!--</h4>-->
-            <!--<ul class="team__list team__list&#45;&#45;advisors">-->
+          <div class="team__block">
+            <h4 class="team__subtitle">
+              Advisors
+            </h4>
+            <ul class="team__list team__list--advisors">
+              <li class="team__list-item team__list-item--advisors">
+                <a class="team__img-wrap" href="https://www.linkedin.com/in/nikita-melnikov-a71a06b8/" target="_blank">
+                  <picture>
+                    <source srcset="images/team-3.webp" type="image/webp">
+                    <source srcset="images/team-3.png" type="image/png">
+                    <img src="images/team-3.png" alt="Member of Mithoshi Team">
+                  </picture>
+                </a>
+                <p class="team__member-name">Nikita Melnikov</p>
+                <p class="team__member-occup">Blockchain & Smart Contract Advisor</p>
+              </li>
+              <li class="team__list-item team__list-item--advisors">
+                <a class="team__img-wrap" href="https://www.linkedin.com/in/kim-zafra-el-jugador-53393037/" target="_blank">
+                  <picture>
+                    <source srcset="images/team-4.webp" type="image/webp">
+                    <source srcset="images/team-4.png" type="image/png">
+                    <img src="images/team-4.png" alt="Member of Mithoshi Team">
+                  </picture>
+                </a>
+                <p class="team__member-name">Kim Zafra</p>
+                <p class="team__member-occup">Technical Game Advisor / Game Mathematecian</p>
+              </li>
               <!--<li class="team__list-item team__list-item&#45;&#45;advisors">-->
                 <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/simon-cocking-20540135/" target="_blank">-->
                   <!--<img src="images/team-25.png" alt="Member of Mithoshi Team">-->
@@ -860,9 +969,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 <!--<p class="team__member-name">-</p>-->
                 <!--<p class="team__member-occup">Advisor [IT & IT Security]</p>-->
               <!--</li>-->
-            <!--</ul>-->
-          <!--</div>-->
-
+            </ul>
+          </div>
           <div class="team__block">
             <h4 class="team__subtitle">
               Partners
@@ -870,7 +978,11 @@ require_once (__DIR__ . '/php/bootstrap.php');
             <ul class="team__list team__list--partners">
               <li class="team__list-item team__list-item--partners">
                 <a class="team__img-wrap team__img-wrap--partners" href="https://loftchain.io/" target="_blank">
-                  <img src="images/partner-1.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/partner-1.webp" type="image/webp">
+                    <source srcset="images/partner-1.png" type="image/png">
+                    <img src="images/partner-1.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Loftchain</p>
                 <p class="team__member-occup">Technical Partners</p>
@@ -884,7 +996,11 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <!--</li>-->
               <li class="team__list-item team__list-item--partners">
                 <a class="team__img-wrap team__img-wrap--partners team__img-wrap--partners-shrink" href="https://www.experfy.com/" target="_blank">
-                  <img src="images/partner-3.png" alt="Member of Mithoshi Team">
+                  <picture>
+                    <source srcset="images/partner-3.webp" type="image/webp">
+                    <source srcset="images/partner-3.png" type="image/jpeg">
+                    <img src="images/partner-3.png" alt="Member of Mithoshi Team">
+                  </picture>
                 </a>
                 <p class="team__member-name">Experfy</p>
               </li>
@@ -937,12 +1053,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </p>
           </div>
         </section>
-        <!--<div class="wrap">-->
-          <!--<div class="wrapper">-->
-            <!--<iframe width="560" height="349" src="https://www.youtube.com/embed/nxCJ80f2_sU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__wrapper">
@@ -995,5 +1107,40 @@ require_once (__DIR__ . '/php/bootstrap.php');
       }};
 
   </script>
+  <script>
+  // poster frame click event
+  $(document).on('click','.solution__js-iframe-btn',function(ev) {
+    ev.preventDefault();
+    var $poster = $(this);
+    var $wrapper = $poster.closest('.solution__js-video');
+    videoPlay($wrapper);
+  });
+
+  // play the targeted video (and hide the poster frame)
+  function videoPlay($wrapper) {
+    var $iframe = $wrapper.find('.solution__js-iframe');
+    var src = $iframe.data('src');
+    // hide poster
+    $wrapper.addClass('videoWrapperActive');
+    // add iframe src in, starting the video
+    $iframe.attr('src',src);
+  }
+
+  // stop the targeted/all videos (and re-instate the poster frames)
+  function videoStop($wrapper) {
+    // if we're stopping all videos on page
+    if (!$wrapper) {
+      var $wrapper = $('.solution__js-video');
+      var $iframe = $('.solution__js-iframe');
+      // if we're stopping a particular video
+    } else {
+      var $iframe = $wrapper.find('solution__js-iframe');
+    }
+    // reveal poster
+    $wrapper.removeClass('videoWrapperActive');
+    // remove youtube link, stopping the video from playing in the background
+    $iframe.attr('src','');
+  }
+</script>
 </body>
 </html>

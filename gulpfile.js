@@ -17,6 +17,22 @@ var run = require('run-sequence');
 var del = require('del');
 
 
+gulp.task('images', function () {
+  return gulp.src('images/**/*.{png,jpg,svg}')
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest('images'));
+});
+
+gulp.task('webp', function () {
+  return gulp.src('images/**/*.{png,jpg}')
+    .pipe(webp({quality: 75}))
+    .pipe(gulp.dest('images'));
+});
+
 gulp.task('style', function () {
   gulp.src('less/style.less')
     .pipe(plumber())
@@ -43,6 +59,8 @@ gulp.task('serve', function () {
 gulp.task('build', function (done) {
   run(
     'style',
+    'images',
+    'webp',
     done
   );
 });
