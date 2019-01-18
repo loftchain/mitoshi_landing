@@ -1804,10 +1804,18 @@ textarea {
   background-repeat: no-repeat;
   background-size: contain;
 }
+.team__img-wrap picture {
+  display: flex;
+}
 .team__img-wrap--partners {
   justify-content: center;
   align-items: center;
   background-color: #000000;
+}
+.team__img-wrap--partners picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .team__img-wrap--partners-shrink img {
   width: 90%;
