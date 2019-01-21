@@ -67,10 +67,14 @@ require_once (__DIR__ . '/php/bootstrap.php');
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--active" href="#home"><?=lang('navbar_home')?></a>
+                <a class="main-nav__link main-nav__link--active" href="#home">
+                  <?=lang('navbar_home')?>
+                </a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#about"><?=lang('navbar_about')?></a>
+                <a class="main-nav__link" href="#about">
+                  <?=lang('navbar_about')?>
+                </a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#sale"><?=lang('navbar_token_sale')?></a>
@@ -85,19 +89,25 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 <a class="main-nav__link" href="#how"><?=lang('navbar_how_it_works')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#roadmap">Roadmap</a>
+                <a class="main-nav__link" href="#roadmap"><?=lang('navbar_roadmap')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#team">Team</a>
+                <a class="main-nav__link" href="#team"><?=lang('navbar_team')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#contacts">Connect with Us</a>
+                <a class="main-nav__link" href="#contacts"><?=lang('navbar_connect_with')?></a>
               </li>
             </ul>
           </nav>
           <div class="header__buttons-group">
-            <a class="header__button" href="https://investor.mitoshi.io/register" target="_blank">SIGN UP</a>
-            <a class="header__button" href="https://investor.mitoshi.io/login" target="_blank">LOGIN</a>
+            <a class="header__button"
+               href="https://investor.mitoshi.io/register" target="_blank">
+              <?=lang('navbar_signup')?>
+            </a>
+            <a class="header__button"
+               href="https://investor.mitoshi.io/login" target="_blank">
+              <?=lang('navbar_login')?>
+            </a>
           </div>
         </div>
       </div>
@@ -112,21 +122,25 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </h2>
             <div class="mitoshi__desc">
               <p class="mitoshi__text mitoshi__text--strong">
-                <b>Spreading the joy of winning, one jackpot prize at a time!</b>
+                <b><?=lang('mitoshi_joy_text')?></b>
               </p>
               <p class="mitoshi__text">
-                Be involved in the BlockChain Revolution!
+                <?=lang('mitoshi_involved')?>
               </p>
               <p class="mitoshi__text">
-                We are taking Mitoshi to the forefront of lottery by leveraging on the power of smart contracts on a blockchain platform. By making use of smart contracts, we will build the future of online lottery that is globally accessible in a fair, transparent and secure environment. So you can have the confidence to bet on a winnable draw without compromise.
+                <?=lang('mitoshi_blockchain')?>
               </p>
               <p class="mitoshi__text">
-                When you play Mitoshi, you are already a winner.
+                <?=lang('mitoshi_play')?>
               </p>
             </div>
             <div class="mitoshi__button-group">
-              <a class="mitoshi__button mitoshi__button--transparent" href="files/Fold_Brochure.pdf" target="_blank">Download Brochure</a>
-              <a class="mitoshi__button mitoshi__button--gold mitoshi__button--right" href="https://t.me/Mitoshi_Crypto" target="_blank">Join Community</a>
+              <a class="mitoshi__button mitoshi__button--transparent" href="files/Fold_Brochure.pdf" target="_blank">
+                <?=lang('mitoshi_brochure')?>
+              </a>
+              <a class="mitoshi__button mitoshi__button--gold mitoshi__button--right" href="https://t.me/Mitoshi_Crypto" target="_blank">
+                <?=lang('mitoshi_community')?>
+              </a>
             </div>
           </div>
         </section>
@@ -228,7 +242,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </ul>
           </div>
           <h2 class="about__title">
-            About Mitoshi CryptoLotto
+            <?=lang('about_title')?>
           </h2>
           <div class="about__group">
             <div class="about__video-wrap">
@@ -236,29 +250,29 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </div>
             <div class="about__desc">
               <p class="about__text about__text--strong">
-                <b>Our vision</b>
+                <b><?=lang('about_vision')?></b>
               </p>
               <p class="about__text">
-                Mitoshi is the next generation of online gaming and cryptolotteries powered by the blockchain. Our vision is to bring forth a completely fair, secure and transparent cryptolottery experience that is readily accessible to the global market. Envisioned as a truly international cryptolottery play – it will offer draws that cover the geographies of Asia, North America and Europe. Mitoshi crypolotto tokens can be purchased using fiat and crypto currencies.
+                <?=lang('about_vision_text')?>
               </p>
               <p class="about__text about__text--strong">
-                <b>A lottery built on smart contracts</b>
+                <b><?=lang('about_contract')?></b>
               </p>
               <p class="about__text">
-                Mitoshi will utilize the blockchain platform and with Ethereum smart contracts for collecting, distributing funds as well as in paying lottery sales commissions through our referral program. With smart contracts, neither winning numbers nor lottery tickets could be counterfeited. Mitoshi Cryptolotto will a decentralized community owned by the internet community – thanks to the power of the blockchain.
+                <?=lang('about_contract_text')?>
               </p>
               <p class="about__text about__text--strong">
-                <b>Global draws </b>
+                <b><?=lang('about_draws')?></b>
               </p>
               <p class="about__text">
-                Mitoshi will have a widespread lineup of lottery draws. Each draw contains massive payouts for its winners. Mitoshi CryptoLotto will have a global reach, allowing anybody from around the globe to participate by the tap of a finger.
+                <?=lang('about_draws_text')?>
               </p>
               <div class="about__buttons-group">
                 <a class="about__button" target="_blank" href="files/Draws.pdf">
-                  Learn more about Draws
+                  <?=lang('about_draws_learn')?>
                 </a>
                 <a class="about__button" target="_blank" href="https://www.playmitoshi.com">
-                  Play Mitoshi
+                  <?=lang('about_play')?>
                 </a>
               </div>
             </div>
@@ -266,62 +280,63 @@ require_once (__DIR__ . '/php/bootstrap.php');
         </section>
         <section class="sale" id="sale">
           <h2 class="sale__title">
-            Mitoshi Token Sale
+            <?=lang('sale_title')?>
           </h2>
           <p class="sale__text">
-            Mitoshi tokens are utility (user) tokens and the sales of its tokens are for the future participation of Mitoshi’s lottery draws in a smart contract platform.
+            <?=lang('sale_token')?>
           </p>
           <div class="sale__content">
             <div class="sale__table-wrap">
               <table class="sale__table">
                 <tr class="sale__table-row">
-                  <td class="sale__table-data"><b>Token symbol</b></td>
+                  <td class="sale__table-data"><b><?=lang('sale_token_symbol')?></b></td>
                   <td class="sale__table-data sale__table-data--right">MTSH</td>
                 </tr>
                 <tr class="sale__table-row">
-                  <td class="sale__table-data"><b>Token sale start</b></td>
-                  <td class="sale__table-data sale__table-data--right">27 January 2019</td>
+                  <td class="sale__table-data"><b><?=lang('sale_token_start')?></b></td>
+                  <td class="sale__table-data sale__table-data--right"><?=lang('sale_token_start_date')?></td>
                 </tr>
                 <tr class="sale__table-row">
-                  <td class="sale__table-data"><b>Token sale end</b></td>
-                  <td class="sale__table-data sale__table-data--right">25 August 2019</td>
+                  <td class="sale__table-data"><b><?=lang('sale_token_end')?></b></td>
+                  <td class="sale__table-data sale__table-data--right"><?=lang('sale_token_end_date')?></td>
                 </tr>
                 <tr class="sale__table-row">
-                  <td class="sale__table-data"><b>Total amount of tokens</b></td>
+                  <td class="sale__table-data"><b><?=lang('sale_total_amount')?></b></td>
                   <td class="sale__table-data sale__table-data--right">1,000,000,000</td>
                 </tr>
                 <tr class="sale__table-row">
-                  <td class="sale__table-data"><b>Total amount to be sold</b></td>
-                  <td class="sale__table-data sale__table-data--right">680,000,000 or 68%
-                    of total issuance</td>
+                  <td class="sale__table-data"><b><?=lang('sale_to_be_sold')?></b></td>
+                  <td class="sale__table-data sale__table-data--right">
+                    <?=lang('sale_to_be_sold_amount')?>
+                  </td>
                 </tr>
                 <tr class="sale__table-row">
-                  <td class="sale__table-data"><b>Total private sale</b></td>
+                  <td class="sale__table-data"><b><?=lang('sale_private')?></b></td>
                   <td class="sale__table-data sale__table-data--right">US$20,000,000.00</td>
                 </tr>
                 <tr class="sale__table-row">
-                  <td class="sale__table-data"><b>Total pre sale</b></td>
+                  <td class="sale__table-data"><b><?=lang('sale_pre')?></b></td>
                   <td class="sale__table-data sale__table-data--right">US$20,000,000.00</td>
                 </tr>
                 <tr class="sale__table-row">
-                  <td class="sale__table-data"><b>Token main sale</b></td>
+                  <td class="sale__table-data"><b><?=lang('sale_main')?></b></td>
                   <td class="sale__table-data sale__table-data--right">US$60,000,000.00</td>
                 </tr>
                 <tr class="sale__table-row">
-                  <td class="sale__table-data"><b>Soft cap</b></td>
+                  <td class="sale__table-data"><b><?=lang('sale_soft_cap')?></b></td>
                   <td class="sale__table-data sale__table-data--right">US$10,000,000.00</td>
                 </tr>
                 <tr class="sale__table-row">
-                  <td class="sale__table-data"><b>Hard cap</b></td>
+                  <td class="sale__table-data"><b><?=lang('sale_hard_cap')?></b></td>
                   <td class="sale__table-data sale__table-data--right">US$100,000,000.00</td>
                 </tr>
                 <tr class="sale__table-row">
                   <td
-                    class="sale__table-data"><b>Accepted crypto & fiat currencies</b></td>
+                    class="sale__table-data"><b><?=lang('sale_accepted')?></b></td>
                   <td class="sale__table-data sale__table-data--right">ETH, BTC & USD</td>
                 </tr>
                 <tr class="sale__table-row">
-                  <td class="sale__table-data"><b>Minimum purchase limit</b></td>
+                  <td class="sale__table-data"><b><?=lang('sale_min_purchase')?></b></td>
                   <td class="sale__table-data sale__table-data--right">TBA</td>
                 </tr>
               </table>
@@ -329,49 +344,49 @@ require_once (__DIR__ . '/php/bootstrap.php');
             <div class="sale__allocation">
               <div class="sale__graph sale__graph--token">
                 <h3 class="sale__graph-title">
-                  Token allocation
+                  <?=lang('sale_allocation')?>
                 </h3>
                 <div class="sale__graph-wrap">
                   <div class="sale__circle sale__circle--token">
                   </div>
                   <ul class="sale__list">
                     <li class="sale__list-item sale__list-item--first">
-                     68% token sale
+                      <?=lang('sale_for_sale')?>
                     </li>
                     <li class="sale__list-item sale__list-item--second">
-                      15% team
+                      <?=lang('sale_for_team')?>
                     </li>
                     <li class="sale__list-item sale__list-item--third">
-                      10% advisors and partners
+                      <?=lang('sale_for_partners')?>
                     </li>
                     <li class="sale__list-item sale__list-item--fourth">
-                      7% bounties and airdrops
+                      <?=lang('sale_for_bounty')?>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="sale__graph sale__graph--proceed">
                 <h3 class="sale__graph-title">
-                  Proceed allocation
+                  <?=lang('sale_proceed')?>
                 </h3>
                 <div class="sale__graph-wrap">
                   <div class="sale__circle sale__circle--proceed">
                   </div>
                   <ul class="sale__list">
                     <li class="sale__list-item sale__list-item--first">
-                      50% set-up of winnings & reserve fund
+                      <?=lang('sale_winnings')?>
                     </li>
                     <li class="sale__list-item sale__list-item--second">
-                      20% technical development
+                      <?=lang('sale_technical')?>
                     </li>
                     <li class="sale__list-item sale__list-item--third">
-                      15% promotions and marketing
+                      <?=lang('sale_promotion')?>
                     </li>
                     <li class="sale__list-item sale__list-item--fourth">
-                      10% sales comission
+                      <?=lang('sale_comission')?>
                     </li>
                     <li class="sale__list-item sale__list-item--fifth">
-                      5% admin and global operations
+                      <?=lang('sale_admin')?>
                     </li>
                   </ul>
                 </div>
@@ -380,20 +395,23 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </div>
           </div>
           <div class="sale__buttons-group">
-            <a href="files/Whitepaper.pdf" target="_blank" class="sale__button">Download White Paper</a>
-            <a href="#" target="_blank" class="sale__button">Smart Contract Audit 1</a>
-            <a href="#" target="_blank" class="sale__button">Smart Contract Audit 2</a>
+            <a href="files/Whitepaper.pdf" target="_blank" class="sale__button">
+              <?=lang('sale_white_paper')?>
+            </a>
+            <a href="#" target="_blank" class="sale__button">
+              <?=lang('sale_smart_one')?>
+            </a>
+            <a href="#" target="_blank" class="sale__button">
+              <?=lang('sale_smart_two')?>
+            </a>
           </div>
         </section>
         <section class="challenge" id="challenge">
           <h2 class="challenge__title">
-            Challenges<br>
-            on the Global<br>
-            Lotto Industry
+            <?=lang('challenge_title')?>
           </h2>
           <p class="challenge__text">
-            Issues and challenges in industry have not only hurt the industry, but have also hindered its growth.  We look at the more pressing reasons why today’s traditional
-            lotteries need to evolve.
+            <?=lang('challenge_issues')?>
           </p>
           <ul class="challenge__list">
             <li class="challenge__item">
@@ -401,9 +419,11 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 <img src="images/challenge-1.png" alt="Lack Fairness Transparency">
               </div>
               <div class="challenge__desc">
-                <h4 class="challenge__item-title">Lack fairness transparency</h4>
+                <h4 class="challenge__item-title">
+                  <?=lang('challenge_lack_transparency')?>
+                </h4>
                 <p class="challenge__item-text">
-                  A recent study went into how exactly a lottery can be rigged, tampered and cheated – arising questions such us the validity and “realness” of the winning ticket; fair allocation of ticket proceeds to the prize pool; is the winning number drawn in a random and secure manner; and does someone really win it and not just go to a handful operators.  A lottery based on smart contracts should address each and one of these concerns.
+                  <?=lang('challenge_lack_transparency_text')?>
                 </p>
               </div>
             </li>
@@ -412,9 +432,11 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 <img src="images/challenge-2.png" alt="Lack of Innovation">
               </div>
               <div class="challenge__desc">
-                <h4 class="challenge__item-title">Lack of innovation</h4>
+                <h4 class="challenge__item-title">
+                  <?=lang('challenge_lack_innovation')?>
+                </h4>
                 <p class="challenge__item-text">
-                  Traditional Lotteries have not shown any innovation and don’t have much room for variety in game development.  Mitoshi cryptolotto will offer fresh and winnable draws without compromising on fairness and on its entertainment value.
+                  <?=lang('challenge_lack_innovation_text')?>
                 </p>
               </div>
             </li>
@@ -423,9 +445,11 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 <img src="images/challenge-3.png" alt="Regulatory Setbacks">
               </div>
               <div class="challenge__desc">
-                <h4 class="challenge__item-title">Regulatory setbacks</h4>
+                <h4 class="challenge__item-title">
+                  <?=lang('challenge_setbacks')?>
+                </h4>
                 <p class="challenge__item-text">
-                  Traditional lotteries today are hindered with regulations – from territorial limits that prevent audiences from other countries in participating into the big jackpot draws to taxes and extra charges.  Centralized or monopolized operators bring about regulations, to include even state controlled ones.  These regulations hurt the prize money that should be going to the players.
+                  <?=lang('challenge_setbacks_text')?>
                 </p>
               </div>
             </li>
@@ -434,9 +458,11 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 <img src="images/challenge-4.png" alt="Long Payouts">
               </div>
               <div class="challenge__desc">
-                <h4 class="challenge__item-title">Long payouts</h4>
+                <h4 class="challenge__item-title">
+                  <?=lang('challenge_payouts')?>
+                </h4>
                 <p class="challenge__item-text">
-                  Spanning anywhere from weeks to months after the results, traditional lotteries have been notorious to distributing prize winnings extremely late with a lot of verification checks in the identity and the ticket.  This is a major inconvenience to the players, and a practice that shouldn’t be tolerated.
+                  <?=lang('challenge_payouts_text')?>
                 </p>
               </div>
             </li>
@@ -445,9 +471,11 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 <img src="images/challenge-5.png" alt="Stunted Growth">
               </div>
               <div class="challenge__desc">
-                <h4 class="challenge__item-title">Stunted growth</h4>
+                <h4 class="challenge__item-title">
+                  <?=lang('challenge_growth')?>
+                </h4>
                 <p class="challenge__item-text">
-                  Expanding markets is a formidable challenge in the industry because of the difficulty in attracting new players or retaining existing ones, which not only makes it likely to be reliant on addiction.  This makes it somewhat reprehensible, but this also makes it more difficult to pursue and implement new sales channels.
+                  <?=lang('challenge_growth_text')?>
                 </p>
               </div>
             </li>
@@ -455,15 +483,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
         </section>
         <section class="solution" id="solution">
           <div class="solution__wrapper">
-            <h2 class="solution__title">Our Solution</h2>
+            <h2 class="solution__title">
+              <?=lang('solution_title')?>
+            </h2>
             <h4 class="solution__subtitle">
-              Integrating smart contracts on a blockchain platform
+              <?=lang('solution_integrating')?>
             </h4>
             <p class="solution__text">
-              Blockchain technology presents several advantages to the lottery industry, making its integration not only immensely beneficial but poses it as a crucial step to further expand the industry. Integrating blockchain technology decentralizes the chances, making the lottery more transparent and more accessible. By making use of Ethereum contracts, Mitoshi will build a lottery that is fair, transparent and secure – and globally accessible to those with an internet and a smartphone.
+              <?=lang('solution_advantages_one')?>
             </p>
             <p class="solution__text">
-              Furthermore, decentralized technology is a way to work around regulatory policies that inhibit the growth of the lotto industry while making its market much more expandable and involved. Mitoshi CryptoLotto will then be accessible anytime, anywhere with the ease of transaction provided through cryptocurrency via blockchain technology.
+              <?=lang('solution_advantages_two')?>
             </p>
           </div>
           <div class="solution__video-wrapper">
@@ -481,7 +511,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </div>
           </div>
           <a class="solution__button" href="files/Features.pdf" target="_blank">
-            Mitoshi CryptoLotto Features
+            <?=lang('solution_features')?>
           </a>
         </section>
         <section class="how" id="how">
@@ -499,114 +529,178 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </picture>
           </div>
           <div class="how__desc">
-            <h2 class="how__title">How it Works</h2>
+            <h2 class="how__title">
+              <?=lang('how_title')?>
+            </h2>
             <ul class="how__list">
               <li class="how__item">
-                <h3 class="how__subtitle">Mitoshi mobile application </h3>
+                <h3 class="how__subtitle">
+                  <?=lang('how_mobile')?>
+                </h3>
                 <p class="how__text">
-                  The Mitoshi mobile application will be designed to access the mitoshi platform. This app will hold all capabilities to join each draw as well as navigate through other gaming opportunities provided by the Mitoshi platform. The application can be accessed through both IOS and android.
+                  <?=lang('how_mobile_text')?>
                 </p>
               </li>
               <li class="how__item">
-                <h3 class="how__subtitle">Payout methods</h3>
+                <h3 class="how__subtitle"><?=lang('how_payout')?></h3>
                 <p class="how__text">
-                  Those who want to purchase these lotto tickets can either go to our website or download the app. They can register and an e-wallet will be assigned to them. They either deposit cash or transfer their bitcoin or ethereum assets into the e-wallets. And can purchase Mitoshi play tokens after these assets are credited. Mitoshi lottery can only be purchased through Mitoshi tokens and will be priced at 1 Mitoshi coin per ticket.
+                  <?=lang('how_payout_text')?>
                 </p>
               </li>
               <li class="how__item">
-                <h3 class="how__subtitle">Airdrops, rewards and bounty</h3>
+                <h3 class="how__subtitle"><?=lang('how_bounty')?></h3>
                 <p class="how__text">
-                  Mitoshi will allocate millions of free tokens for airdrops, rewards and bounty.  Find out more on how you can qualify to own Mitoshi tokens absolutely free.  So you can start winning.
+                  <?=lang('how_bounty_text')?>
                 </p>
               </li>
             </ul>
             <a class="how__button" href="https://bitcointalk.org/index.php?topic=5053501.new#new" target="_blank">
-              Rewards & Bounty Terms & Conditions
+              <?=lang('how_rewards')?>
             </a>
           </div>
         </section>
         <section class="roadmap" id="roadmap">
-          <h2 class="roadmap__title">Roadmap</h2>
+          <h2 class="roadmap__title">
+            <?=lang('roadmap_title')?>
+          </h2>
           <div class="roadmap__img-wrap">
             <img src="images/roadmap-bg.png" alt="Roadmap">
           </div>
           <div class="roadmap__container">
             <ul class="roadmap__list roadmap__list--start">
               <li class="roadmap__item roadmap__item--medium">
-                <h4 class="roadmap__subtitle">April to June 2018</h4>
+                <h4 class="roadmap__subtitle">
+                  <?=lang('roadmap_one')?>
+                </h4>
                 <ul class="roadmap__sublist">
-                  <li class="roadmap__sublist-item">Research</li>
-                  <li class="roadmap__sublist-item">Business case formation</li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_research')?>
+                  </li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_bus_case')?>
+                  </li>
                 </ul>
               </li>
               <li class="roadmap__item roadmap__item--big">
-                <h4 class="roadmap__subtitle">July to September 2018</h4>
+                <h4 class="roadmap__subtitle">
+                  <?=lang('roadmap_two')?>
+                </h4>
                 <ul class="roadmap__sublist">
-                  <li class="roadmap__sublist-item">Team formation</li>
-                  <li class="roadmap__sublist-item">Preparation of sale</li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_team')?>
+                  </li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_preparation')?>
+                  </li>
                 </ul>
               </li>
               <li class="roadmap__item roadmap__item--big">
-                <h4 class="roadmap__subtitle">October 2018 <span>to January 2019</span></h4>
+                <h4 class="roadmap__subtitle">
+                  <?=lang('roadmap_three')?>
+                </h4>
                 <ul class="roadmap__sublist">
-                  <li class="roadmap__sublist-item">Private sale</li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_private')?>
+                  </li>
                 </ul>
               </li>
               <li class="roadmap__item roadmap__item--medium">
-                <h4 class="roadmap__subtitle">February 2019</h4>
+                <h4 class="roadmap__subtitle">
+                  <?=lang('roadmap_four')?>
+                </h4>
                 <ul class="roadmap__sublist">
-                  <li class="roadmap__sublist-item">Presale (30% Bonus)</li>
-                  <li class="roadmap__sublist-item">Start of Games Development</li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_30')?>
+                  </li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_start_dev')?>
+                  </li>
                 </ul>
               </li>
             </ul>
             <ul class="roadmap__list roadmap__list--center">
               <li class="roadmap__item">
-                <h4 class="roadmap__subtitle">March 2019</h4>
+                <h4 class="roadmap__subtitle">
+                  <?=lang('roadmap_five')?>
+                </h4>
                 <ul class="roadmap__sublist">
-                  <li class="roadmap__sublist-item">Presale (25% Bonus)</li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_25')?>
+                  </li>
                 </ul>
               </li>
               <li class="roadmap__item">
-                <h4 class="roadmap__subtitle">April 2019</h4>
+                <h4 class="roadmap__subtitle">
+                  <?=lang('roadmap_six')?>
+                </h4>
                 <ul class="roadmap__sublist">
-                  <li class="roadmap__sublist-item">Presale (20% Bonus)</li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_20')?>
+                  </li>
                 </ul>
               </li>
               <li class="roadmap__item">
-                <h4 class="roadmap__subtitle">May 2019</h4>
+                <h4 class="roadmap__subtitle">
+                  <?=lang('roadmap_seven')?>
+                </h4>
                 <ul class="roadmap__sublist">
-                  <li class="roadmap__sublist-item">Presale (15% Bonus)</li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_15')?>
+                  </li>
                 </ul>
               </li>
             </ul>
             <ul class="roadmap__list roadmap__list--end">
               <li class="roadmap__item roadmap__item--little">
-                <h4 class="roadmap__subtitle">June 2019</h4>
+                <h4 class="roadmap__subtitle">
+                  <?=lang('roadmap_eight')?>
+                </h4>
                 <ul class="roadmap__sublist">
-                  <li class="roadmap__sublist-item">Presale (10% Bonus)</li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_10')?>
+                  </li>
                 </ul>
               </li>
               <li class="roadmap__item roadmap__item--big">
-                <h4 class="roadmap__subtitle">July 2019</h4>
+                <h4 class="roadmap__subtitle">
+                  <?=lang('roadmap_nine')?>
+                </h4>
                 <ul class="roadmap__sublist">
-                  <li class="roadmap__sublist-item">Presale (5% Bonus)</li>
-                  <li class="roadmap__sublist-item">Launch of www.playmitoshi.com website</li>
-                  <li class="roadmap__sublist-item">Launch of 4 Lottery Draws</li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_5')?>
+                  </li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_site')?>
+                  </li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_draws')?>
+                  </li>
                 </ul>
               </li>
               <li class="roadmap__item roadmap__item--medium">
-                <h4 class="roadmap__subtitle">August 2019</h4>
+                <h4 class="roadmap__subtitle">
+                  <?=lang('roadmap_ten')?>
+                </h4>
                 <ul class="roadmap__sublist">
-                  <li class="roadmap__sublist-item">CrowdSale Period (No Bonus)</li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_crowdsale')?>
+                  </li>
                 </ul>
               </li>
               <li class="roadmap__item roadmap__item--big">
-                <h4 class="roadmap__subtitle">September 2019</h4>
+                <h4 class="roadmap__subtitle">
+                  <?=lang('roadmap_eleven')?>
+                </h4>
                 <ul class="roadmap__sublist">
-                  <li class="roadmap__sublist-item">Exchange Listing</li>
-                  <li class="roadmap__sublist-item">Mobile App Release of Games [Android]</li>
-                  <li class="roadmap__sublist-item">Launch of 3 More Lottery Draws</li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_exchange')?>
+                  </li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_release')?>
+                  </li>
+                  <li class="roadmap__sublist-item">
+                    <?=lang('roadmap_more_draws')?>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -615,13 +709,11 @@ require_once (__DIR__ . '/php/bootstrap.php');
         <section class="team" id="team">
           <h2 class="team__title">
             Mitoshi ICO
-            <span>Team Members</span>
+            <span><?=lang('team_title')?></span>
           </h2>
           <div class="team__block">
             <h4 class="team__subtitle">
-              Executive &
-              <span>Management</span>
-              <span>Team</span>
+              <?=lang('team_executive')?>
             </h4>
             <ul class="team__list team__list--executive">
               <li class="team__list-item team__list-item--executive">
@@ -632,8 +724,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-1.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">TC Picardo</p>
-                <p class="team__member-occup">CEO & Founder</p>
+                <p class="team__member-name"><?=lang('team_picardo')?></p>
+                <p class="team__member-occup"><?=lang('team_ceo')?></p>
               </li>
               <li class="team__list-item team__list-item--executive">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/normanvelasco/" target="_blank">
@@ -643,8 +735,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-2.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Norman Velasco</p>
-                <p class="team__member-occup">COO & Co-Founder</p>
+                <p class="team__member-name"><?=lang('team_velasco')?></p>
+                <p class="team__member-occup"><?=lang('team_coo')?></p>
               </li>
               <li class="team__list-item team__list-item--executive">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/rob-natthavong-jumchai-1a4067172/" target="_blank">
@@ -654,9 +746,9 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-5.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Robert Natthavong Jumchai</p>
+                <p class="team__member-name"><?=lang('team_jumchai')?></p>
                 <p class="team__member-occup">
-                  Chief Business Development Officer
+                  <?=lang('team_chief')?>
                 </p>
               </li>
               <li class="team__list-item team__list-item--executive">
@@ -667,9 +759,9 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-6.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Charles Greenwood</p>
+                <p class="team__member-name"><?=lang('team_green')?></p>
                 <p class="team__member-occup">
-                  Business Development, UK & Europe
+                  <?=lang('team_bus_dev')?>
                 </p>
               </li>
               <li class="team__list-item team__list-item--management">
@@ -680,17 +772,16 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-7.jpg" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Jocelyn Peralta</p>
+                <p class="team__member-name"><?=lang('team_peralta')?></p>
                 <p class="team__member-occup">
-                  Finance & Accounting
+                  <?=lang('team_finance')?>
                 </p>
               </li>
             </ul>
           </div>
           <div class="team__block">
             <h4 class="team__subtitle">
-              Development
-              <span>team</span>
+              <?=lang('team_dev')?>
             </h4>
             <ul class="team__list team__list--development">
               <li class="team__list-item team__list-item--development">
@@ -701,8 +792,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-9.jpg" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Sergey Provalinski</p>
-                <p class="team__member-occup">Front-end Developer</p>
+                <p class="team__member-name"><?=lang('team_proval')?></p>
+                <p class="team__member-occup"><?=lang('team_front')?></p>
               </li>
               <li class="team__list-item team__list-item--development">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D0%BF%D0%BE%D0%B4%D1%80%D0%B5%D0%B7%D0%BE%D0%B2-b3328a173/" target="_blank">
@@ -712,8 +803,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-10.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Alexander Podrezov</p>
-                <p class="team__member-occup">Back-end Developer</p>
+                <p class="team__member-name"><?=lang('team_podrez')?></p>
+                <p class="team__member-occup"><?=lang('team_back')?></p>
               </li>
               <li class="team__list-item team__list-item--development">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/blockchainwork/" target="_blank">
@@ -723,8 +814,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-11.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Kalinouski Konstantin</p>
-                <p class="team__member-occup">Protocol Architect</p>
+                <p class="team__member-name"><?=lang('team_kalin')?></p>
+                <p class="team__member-occup"><?=lang('team_protocol')?></p>
               </li>
               <li class="team__list-item team__list-item--development">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/julia-drobnitsa/" target="_blank">
@@ -734,25 +825,16 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-12.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Julia Drobnitsa</p>
-                <p class="team__member-occup">UX / IU Designer</p>
+                <p class="team__member-name"><?=lang('team_drobnitsa')?></p>
+                <p class="team__member-occup"><?=lang('team_ux')?></p>
               </li>
             </ul>
           </div>
           <div class="team__block">
             <h4 class="team__subtitle">
-              PR &
-              <span>Marketing</span>
-              <span>Team</span>
+              <?=lang('team_pr')?>
             </h4>
             <ul class="team__list team__list--pr">
-              <!--<li class="team__list-item team__list-item&#45;&#45;pr">-->
-              <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/juri-verbitski-90967584/" target="_blank">-->
-              <!--<img src="images/team-13.png" alt="Member of Mithoshi Team">-->
-              <!--</a>-->
-              <!--<p class="team__member-name">Juri Verbitski</p>-->
-              <!--<p class="team__member-occup">PR & Digital Marketing</p>-->
-              <!--</li>-->
               <li class="team__list-item team__list-item--pr">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/jerickalcancia/" target="_blank">
                   <picture>
@@ -761,16 +843,9 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-14.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Jerick Alcancia</p>
-                <p class="team__member-occup">Motion Graphic Artist</p>
+                <p class="team__member-name"><?=lang('team_alcan')?></p>
+                <p class="team__member-occup"><?=lang('team_motion')?></p>
               </li>
-              <!--<li class="team__list-item team__list-item&#45;&#45;pr">-->
-              <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/randy-pagatpatan-b773a388/" target="_blank">-->
-              <!--<img src="images/team-15.jpg" alt="Member of Mithoshi Team">-->
-              <!--</a>-->
-              <!--<p class="team__member-name">Randy Pagatpatan</p>-->
-              <!--<p class="team__member-occup">Graphic Design</p>-->
-              <!--</li>-->
               <li class="team__list-item team__list-item--pr">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/rmcccos/" target="_blank">
                   <picture>
@@ -779,38 +854,14 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-16.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Rowena Ma. Clara Cos</p>
-                <p class="team__member-occup">Copywriter</p>
+                <p class="team__member-name"><?=lang('team_rowena')?></p>
+                <p class="team__member-occup"><?=lang('team_copy')?></p>
               </li>
             </ul>
           </div>
-          <!--<div class="team__block">-->
-            <!--<h4 class="team__subtitle">-->
-              <!--Management-->
-              <!--<span>team</span>-->
-            <!--</h4>-->
-            <!--<ul class="team__list team__list&#45;&#45;management">-->
-              <!--<li class="team__list-item team__list-item&#45;&#45;management">-->
-                <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/nikita-melnikov-a71a06b8/" target="_blank">-->
-                  <!--<img src="images/team-3.png" alt="Member of Mithoshi Team">-->
-                <!--</a>-->
-                <!--<p class="team__member-name">Nikita Melnikov</p>-->
-                <!--<p class="team__member-occup">Blockchain & Smart Contract Advisor</p>-->
-              <!--</li>-->
-              <!--<li class="team__list-item team__list-item&#45;&#45;management">-->
-                <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/kim-zafra-el-jugador-53393037/" target="_blank">-->
-                  <!--<img src="images/team-4.png" alt="Member of Mithoshi Team">-->
-                <!--</a>-->
-                <!--<p class="team__member-name">Kim Zafra</p>-->
-                <!--<p class="team__member-occup">Technical Game Advisor / Game Mathematecian</p>-->
-              <!--</li>-->
-            <!--</ul>-->
-          <!--</div>-->
           <div class="team__block">
             <h4 class="team__subtitle">
-              Community,
-              <span>Social Media</span>
-              <span> and Bounty Management</span>
+              <?=lang('team_management')?>
             </h4>
             <ul class="team__list team__list--media">
               <li class="team__list-item team__list-item--media">
@@ -821,8 +872,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-17.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Kashif Syed</p>
-                <p class="team__member-occup">Social Media Management</p>
+                <p class="team__member-name"><?=lang('team_syed')?></p>
+                <p class="team__member-occup"><?=lang('team_social')?></p>
               </li>
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/raizalyn-razo/" target="_blank">
@@ -832,8 +883,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-18.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Raizalyn Razo</p>
-                <p class="team__member-occup">Community Management</p>
+                <p class="team__member-name"><?=lang('team_razo')?></p>
+                <p class="team__member-occup"><?=lang('team_community')?></p>
               </li>
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/celeste-paras-79947b6a/" target="_blank">
@@ -843,8 +894,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-19.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Celeste Paras</p>
-                <p class="team__member-occup">Community Management (English)</p>
+                <p class="team__member-name"><?=lang('team_paras')?></p>
+                <p class="team__member-occup"><?=lang('team_community_en')?></p>
               </li>
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/chen-chee-fah-783110142/" target="_blank">
@@ -854,8 +905,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-20.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Chen Chee Fah</p>
-                <p class="team__member-occup">Community Management (Mandarin)</p>
+                <p class="team__member-name"><?=lang('team_fah')?></p>
+                <p class="team__member-occup"><?=lang('team_community_mandarin')?></p>
               </li>
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/awele-kimberly-ajiduah-8981a075/" target="_blank">
@@ -865,8 +916,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-22.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Awele Kimberly Ajiduah</p>
-                <p class="team__member-occup">Content Management</p>
+                <p class="team__member-name"><?=lang('team_awele')?></p>
+                <p class="team__member-occup"><?=lang('team_content')?></p>
               </li>
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/hazel-olivar-58ba23133/" target="_blank">
@@ -876,8 +927,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-24.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Hazel Olivar</p>
-                <p class="team__member-occup">Community Management</p>
+                <p class="team__member-name"><?=lang('team_hazel')?></p>
+                <p class="team__member-occup"><?=lang('team_community')?></p>
               </li>
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/philip-smart-43898b169/" target="_blank">
@@ -887,8 +938,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-23.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Philip Smart Kolawole</p>
-                <p class="team__member-occup">Community Management</p>
+                <p class="team__member-name"><?=lang('team_kola')?></p>
+                <p class="team__member-occup"><?=lang('team_community')?></p>
               </li>
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href=https://www.linkedin.com/in/kris-manalo-793173175/" target="_blank">
@@ -898,8 +949,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-27.jpg" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Kris Manalo</p>
-                <p class="team__member-occup">Community Management</p>
+                <p class="team__member-name"><?=lang('team_manalo')?></p>
+                <p class="team__member-occup"><?=lang('team_community')?></p>
               </li>
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href=https://www.linkedin.com/in/geneva-padua-b93646b1/" target="_blank">
@@ -910,13 +961,13 @@ require_once (__DIR__ . '/php/bootstrap.php');
                   </picture>
                 </a>
                 <p class="team__member-name">Geneva Padua</p>
-                <p class="team__member-occup">Community Management</p>
+                <p class="team__member-occup"><?=lang('team_community')?></p>
               </li>
             </ul>
           </div>
           <div class="team__block">
             <h4 class="team__subtitle">
-              Advisors
+              <?=lang('team_advisors')?>
             </h4>
             <ul class="team__list team__list--advisors">
               <li class="team__list-item team__list-item--advisors">
@@ -927,8 +978,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-3.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Nikita Melnikov</p>
-                <p class="team__member-occup">Blockchain & Smart Contract Advisor</p>
+                <p class="team__member-name"><?=lang('team_melnikov')?></p>
+                <p class="team__member-occup"><?=lang('team_blockchain')?></p>
               </li>
               <li class="team__list-item team__list-item--advisors">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/kim-zafra-el-jugador-53393037/" target="_blank">
@@ -938,42 +989,14 @@ require_once (__DIR__ . '/php/bootstrap.php');
                     <img src="images/team-4.png" alt="Member of Mithoshi Team">
                   </picture>
                 </a>
-                <p class="team__member-name">Kim Zafra</p>
-                <p class="team__member-occup">Technical Game Advisor / Game Mathematecian</p>
+                <p class="team__member-name"><?=lang('team_zafra')?></p>
+                <p class="team__member-occup"><?=lang('team_math')?></p>
               </li>
-              <!--<li class="team__list-item team__list-item&#45;&#45;advisors">-->
-                <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/simon-cocking-20540135/" target="_blank">-->
-                  <!--<img src="images/team-25.png" alt="Member of Mithoshi Team">-->
-                <!--</a>-->
-                <!--<p class="team__member-name">Simon Cocking</p>-->
-                <!--<p class="team__member-occup">ICO Advisor</p>-->
-              <!--</li>-->
-              <!--<li class="team__list-item team__list-item&#45;&#45;advisors">-->
-                <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/felixhoe/" target="_blank">-->
-                  <!--<img src="images/team-26.png" alt="Member of Mithoshi Team">-->
-                <!--</a>-->
-                <!--<p class="team__member-name">Felix Hoe</p>-->
-                <!--<p class="team__member-occup">ICO Advisor</p>-->
-              <!--</li>-->
-              <!--<li class="team__list-item team__list-item&#45;&#45;advisors">-->
-                <!--<a class="team__img-wrap" href="https://www.linkedin.com/in/jamesflorentino/" target="_blank">-->
-                  <!--<img src="images/team-27.png" alt="Member of Mithoshi Team">-->
-                <!--</a>-->
-                <!--<p class="team__member-name">James Florentino</p>-->
-                <!--<p class="team__member-occup">ICO Advisor </p>-->
-              <!--</li>-->
-              <!--<li class="team__list-item team__list-item&#45;&#45;advisors">-->
-                <!--<a class="team__img-wrap" href="#" target="_blank">-->
-                  <!--<img src="images/team-28.png" alt="Member of Mithoshi Team">-->
-                <!--</a>-->
-                <!--<p class="team__member-name">-</p>-->
-                <!--<p class="team__member-occup">Advisor [IT & IT Security]</p>-->
-              <!--</li>-->
             </ul>
           </div>
           <div class="team__block">
             <h4 class="team__subtitle">
-              Partners
+              <?=lang('team_partners')?>
             </h4>
             <ul class="team__list team__list--partners">
               <li class="team__list-item team__list-item--partners">
@@ -985,15 +1008,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                   </picture>
                 </a>
                 <p class="team__member-name">Loftchain</p>
-                <p class="team__member-occup">Technical Partners</p>
-
+                <p class="team__member-occup"><?=lang('team_tech_partners')?></p>
               </li>
-              <!--<li class="team__list-item">-->
-                <!--<a class="team__img-wrap team__img-wrap&#45;&#45;partners team__img-wrap&#45;&#45;partners-shrink" href="https://cointraffic.io/" target="_blank">-->
-                  <!--<img src="images/partner-2.svg" alt="Member of Mithoshi Team">-->
-                <!--</a>-->
-                <!--<p class="team__member-name">Cointraffic</p>-->
-              <!--</li>-->
               <li class="team__list-item team__list-item--partners">
                 <a class="team__img-wrap team__img-wrap--partners team__img-wrap--partners-shrink" href="https://www.experfy.com/" target="_blank">
                   <picture>
@@ -1004,20 +1020,16 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 </a>
                 <p class="team__member-name">Experfy</p>
               </li>
-              <!--<li class="team__list-item team__list-item&#45;&#45;partners">-->
-                <!--<a class="team__img-wrap team__img-wrap&#45;&#45;partners" href="https://mosspole.com/" target="_blank">-->
-                  <!--<img src="images/partner-4.png" alt="Member of Mithoshi Team">-->
-                <!--</a>-->
-                <!--<p class="team__member-name">Mosspole Consulting</p>-->
-              <!--</li>-->
             </ul>
           </div>
         </section>
         <section class="contacts" id="contacts">
-          <h2 class="contacts__title">Connect With Us</h2>
+          <h2 class="contacts__title">
+            <span><?=lang('contacts_title')?></span>
+          </h2>
           <div class="contacts__group">
-            <h4 class="contacts__subtitle">Blog</h4>
-            <p class="contacts__text">You can check more about Mitoshi in the following:</p>
+            <h4 class="contacts__subtitle"><?=lang('contacts_blog')?></h4>
+            <p class="contacts__text"><?=lang('contacts_blog_text')?></p>
             <ul class="contacts__list">
               <li
                 class="contacts__list-item contacts__list-item--medium"><a
@@ -1037,19 +1049,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </ul>
           </div>
           <div class="contacts__group">
-            <h4 class="contacts__subtitle">FAQs</h4>
+            <h4 class="contacts__subtitle"><?=lang('contacts_faqs')?></h4>
             <p class="contacts__text">
-              Frequently asked questions on how you can win with Mitoshi.
+              <?=lang('contacts_faqs_text')?>
             </p>
             <a class="contacts__button" href="files/FAQS.pdf" target="_blank">
-              View FAQS
+              <?=lang('contacts_faqs_view')?>
             </a>
           </div>
           <div class="contacts__group">
             <p class="contacts__text">
-              Mitoshi Cryptolotto is owned and operated by Mitoshi Worldwide Holdings
-              Ltd.<br>
-              with registered address at 15/F, Effectual Building, 16 Hennessy Road, Wanchai, Hong Kong.
+              <?=lang('contacts_mitoshi')?>
             </p>
           </div>
         </section>
@@ -1070,14 +1080,16 @@ require_once (__DIR__ . '/php/bootstrap.php');
         <p class="footer__group">
           <span>Mitoshi Worldwide Holdings Ltd. @ 2018</span>
           <span>|</span><br>
-          <span href="#">All rights reserved</span>
+          <span href="#"><?=lang('footer_rights')?></span>
         </p>
         <p class="footer__group">
-          <a href="privacy_policy/" target="_blank">Privacy policy</a>
+          <a href="privacy_policy/" target="_blank">
+            <?=lang('footer_policy')?>
+          </a>
           <span>|</span><br>
-          <a href="terms_and_conditions/" target="_blank">Terms and conditions</a>
+          <a href="terms_and_conditions/" target="_blank"><?=lang('footer_terms')?></a>
           <span>|</span><br>
-          <a href="disclaimer/" target="_blank">Disclaimer</a>
+          <a href="disclaimer/" target="_blank"><?=lang('footer_disclamer')?></a>
         </p>
       </div>
 
