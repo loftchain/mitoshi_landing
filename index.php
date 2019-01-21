@@ -133,7 +133,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
         <section class="about" id="about">
           <ul class="about__rating-list">
             <li class="about__rating-item">
-              <a href="https://icobench.com/ico/mitoshi" class="about__rating-link">
+              <a href="https://icobench.com/ico/mitoshi" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
                     <img src="images/rating/ico-bench.png" alt="ICO-Bench">
@@ -146,7 +146,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
               </a>
             </li>
             <li class="about__rating-item">
-              <a href="https://icoholder.com/en/mitoshi-27603" class="about__rating-link">
+              <a href="https://icoholder.com/en/mitoshi-27603" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
                     <img src="images/rating/ico-holder.svg" alt="ICO-Holder">
@@ -159,7 +159,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
               </a>
             </li>
             <li class="about__rating-item">
-              <a href="https://ico.coincheckup.com/mitoshi/" class="about__rating-link">
+              <a href="https://ico.coincheckup.com/mitoshi/" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
                     <img src="images/rating/coin-check-up.png" alt="CoinCheckUp">
@@ -172,7 +172,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
               </a>
             </li>
             <li class="about__rating-item">
-              <a href="http://toptokensales.com/?s=Mitoshi" class="about__rating-link">
+              <a href="http://toptokensales.com/?s=Mitoshi" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
                     <img src="images/rating/top-token-sales.svg" alt="TopTokenSale">
@@ -185,7 +185,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
               </a>
             </li>
             <li class="about__rating-item">
-              <a href="https://icomarks.com/search?q=Mitoshi" class="about__rating-link">
+              <a href="https://icomarks.com/search?q=Mitoshi" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
                     <img src="images/rating/ico-marks.png" alt="ICOMarks">
