@@ -1,3 +1,7 @@
+<?php
+require_once (__DIR__ . '/php/bootstrap.php');
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -52,7 +56,8 @@
           <button class="header__button">Lang</button>
           <div class="dropdown-content">
             <a>Chinese</a>
-            <a>Russian</a>
+            <a href="?lang=en">English</a>
+            <a href="?lang=ru">Russian</a>
             <a>Spanish</a>
             <a>Korean</a>
             <a>Japanese</a>
@@ -62,22 +67,22 @@
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--active" href="#home">Home</a>
+                <a class="main-nav__link main-nav__link--active" href="#home"><?=lang('navbar_home')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#about">About Mitoshi</a>
+                <a class="main-nav__link" href="#about"><?=lang('navbar_about')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#sale">Token Sale</a>
+                <a class="main-nav__link" href="#sale"><?=lang('navbar_token_sale')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#challenge">Challenges</a>
+                <a class="main-nav__link" href="#challenge"><?=lang('navbar_challenges')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#solution">Our solutions</a>
+                <a class="main-nav__link" href="#solution"><?=lang('navbar_our_solutions')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#how">How it works</a>
+                <a class="main-nav__link" href="#how"><?=lang('navbar_how_it_works')?></a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#roadmap">Roadmap</a>
