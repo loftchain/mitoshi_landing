@@ -8,13 +8,14 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
   list-style: none;
   text-transform: capitalize;
 }
 
 .main-nav__item {
   margin-right: 22px;
+  text-align: center;
 
   &:last-child {
     margin-right: 0;
@@ -58,6 +59,10 @@
   .main-nav__item {
     margin-right: 0;
     border-bottom: 1px solid rgba(223, 223, 223, 0.28);
+
+    br {
+      display: none;
+    }
   }
 
   .main-nav__link {
