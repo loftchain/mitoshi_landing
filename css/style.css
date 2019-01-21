@@ -148,22 +148,16 @@ template {
   display: none;
 }
 @font-face {
-  font-family: 'Rajdhani';
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 400;
-  src: local('Rajdhani Regular'), local('Rajdhani-Regular'), url(https://fonts.gstatic.com/s/rajdhani/v7/LDIxapCSOBg7S-QT7p4HM-M.ttf) format('truetype');
+  src: local('Rubik'), local('Rubik-Regular'), url(https://fonts.gstatic.com/s/rubik/v7/iJWKBXyIfDnIV7nBrXk.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Rajdhani';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Rajdhani Medium'), local('Rajdhani-Medium'), url(https://fonts.gstatic.com/s/rajdhani/v7/LDI2apCSOBg7S-QT7pb0EPOreeI.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Rajdhani';
+  font-family: 'Rubik';
   font-style: normal;
   font-weight: 700;
-  src: local('Rajdhani Bold'), local('Rajdhani-Bold'), url(https://fonts.gstatic.com/s/rajdhani/v7/LDI2apCSOBg7S-QT7pa8FvOreeI.ttf) format('truetype');
+  src: local('Rubik Bold'), local('Rubik-Bold'), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7F6iGmd8WU.ttf) format('truetype');
 }
 html,
 body {
@@ -173,9 +167,8 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: 'Rajdhani', 'Arial', sans-serif;
-  font-size: 15px;
-  font-weight: 500;
+  font-family: 'Rubik', 'Arial', sans-serif;
+  font-size: 14px;
   line-height: 22px;
   color: #4f4f4f;
   background-color: #ffffff;
@@ -247,7 +240,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: 'Rajdhani', 'Arial', sans-serif;
+  font-family: 'Rubik', 'Arial', sans-serif;
 }
 @media (max-width: 991px) {
   section {
@@ -464,7 +457,7 @@ textarea {
   text-transform: capitalize;
 }
 .main-nav__item {
-  margin-right: 22px;
+  margin-right: 17px;
   text-align: center;
 }
 .main-nav__item:last-child {
