@@ -1098,7 +1098,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/main.js?v=3"></script>
   <script>
-    const socket = new WebSocket('ws://46.101.114.134:8080');
+    const socket = new WebSocket('wss://api2-backend.loftchain.io/ws/');
     socket.onopen = function () {
       console.log('Connected');
       socket.send(JSON.stringify({
@@ -1108,7 +1108,6 @@ require_once (__DIR__ . '/php/bootstrap.php');
 
       socket.onmessage = function (data) {
         const sumAmount = JSON.parse(data.data);
-        console.log(sumAmount);
         const aboutSection = document.body.querySelector('.about');
         const sum = aboutSection.querySelector('.about__sale-hardcap');
         const btc = aboutSection.querySelector('.about__sale-btc');
