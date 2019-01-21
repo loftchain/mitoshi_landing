@@ -1,3 +1,7 @@
+<?php
+require_once (__DIR__ . '/php/bootstrap.php');
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -52,7 +56,8 @@
           <button class="header__button">Lang</button>
           <div class="dropdown-content">
             <a>Chinese</a>
-            <a>Russian</a>
+            <a href="?lang=en">English</a>
+            <a href="?lang=ru">Russian</a>
             <a>Spanish</a>
             <a>Korean</a>
             <a>Japanese</a>
@@ -62,22 +67,22 @@
           <nav class="main-nav">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--active" href="#home">Home</a>
+                <a class="main-nav__link main-nav__link--active" href="#home"><?=lang('navbar_home')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#about">About Mitoshi</a>
+                <a class="main-nav__link" href="#about"><?=lang('navbar_about')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#sale">Token Sale</a>
+                <a class="main-nav__link" href="#sale"><?=lang('navbar_token_sale')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#challenge">Challenges</a>
+                <a class="main-nav__link" href="#challenge"><?=lang('navbar_challenges')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#solution">Our solutions</a>
+                <a class="main-nav__link" href="#solution"><?=lang('navbar_our_solutions')?></a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#how">How it works</a>
+                <a class="main-nav__link" href="#how"><?=lang('navbar_how_it_works')?></a>
               </li>
               <li class="main-nav__item">
                 <a class="main-nav__link" href="#roadmap">Roadmap</a>
@@ -128,7 +133,7 @@
         <section class="about" id="about">
           <ul class="about__rating-list">
             <li class="about__rating-item">
-              <a href="https://icobench.com/ico/mitoshi" class="about__rating-link">
+              <a href="https://icobench.com/ico/mitoshi" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
                     <img src="images/rating/ico-bench.png" alt="ICO-Bench">
@@ -141,7 +146,7 @@
               </a>
             </li>
             <li class="about__rating-item">
-              <a href="https://icoholder.com/en/mitoshi-27603" class="about__rating-link">
+              <a href="https://icoholder.com/en/mitoshi-27603" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
                     <img src="images/rating/ico-holder.svg" alt="ICO-Holder">
@@ -154,7 +159,7 @@
               </a>
             </li>
             <li class="about__rating-item">
-              <a href="https://ico.coincheckup.com/mitoshi/" class="about__rating-link">
+              <a href="https://ico.coincheckup.com/mitoshi/" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
                     <img src="images/rating/coin-check-up.png" alt="CoinCheckUp">
@@ -167,7 +172,7 @@
               </a>
             </li>
             <li class="about__rating-item">
-              <a href="http://toptokensales.com/?s=Mitoshi" class="about__rating-link">
+              <a href="http://toptokensales.com/?s=Mitoshi" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
                     <img src="images/rating/top-token-sales.svg" alt="TopTokenSale">
@@ -180,7 +185,7 @@
               </a>
             </li>
             <li class="about__rating-item">
-              <a href="https://icomarks.com/search?q=Mitoshi" class="about__rating-link">
+              <a href="https://icomarks.com/search?q=Mitoshi" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
                     <img src="images/rating/ico-marks.png" alt="ICOMarks">
@@ -1081,7 +1086,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/main.js?v=3"></script>
   <script>
-    const socket = new WebSocket('ws://46.101.114.134:8080');
+    const socket = new WebSocket('wss://api2-backend.loftchain.io/ws/');
     socket.onopen = function () {
       console.log('Connected');
       socket.send(JSON.stringify({
@@ -1091,7 +1096,6 @@
 
       socket.onmessage = function (data) {
         const sumAmount = JSON.parse(data.data);
-        console.log(sumAmount);
         const aboutSection = document.body.querySelector('.about');
         const sum = aboutSection.querySelector('.about__sale-hardcap');
         const btc = aboutSection.querySelector('.about__sale-btc');
