@@ -6,7 +6,8 @@ class LanguageController
     public $currentLang = 'en';
     private $lang = [
       'en',
-      'ru'
+      'ru',
+      'viet'
     ];
 
     public function __construct()

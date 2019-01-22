@@ -58,9 +58,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
             <a>Chinese</a>
             <a href="?lang=en">English</a>
             <a href="?lang=ru">Russian</a>
-            <a>Spanish</a>
             <a>Korean</a>
-            <a>Japanese</a>
+            <a href="?lang=viet">Vietnamese</a>
           </div>
         </div>
         <div class="header__group">
