@@ -55,7 +55,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
         <div class="dropdown header__language">
           <button class="header__button">Lang</button>
           <div class="dropdown-content">
-            <a>Chinese</a>
+            <a href="?lang=ch">Chinese</a>
             <a href="?lang=en">English</a>
             <a href="?lang=ru">Russian</a>
             <a>Korean</a>
