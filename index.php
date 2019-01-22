@@ -13,7 +13,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
 	<title>Mitoshi CryptoLotto ICO</title>
   <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
   <link rel="icon" href="favicon.ico?v=3" type="image/x-icon">
-	<link href="css/style.min.css?v=7" rel="stylesheet">
+	<link href="css/style.min.css?v=8" rel="stylesheet">
   <style>
   </style>
 </head>
