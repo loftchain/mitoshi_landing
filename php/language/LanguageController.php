@@ -8,7 +8,8 @@ class LanguageController
       'en',
       'ru',
       'viet',
-      'ch'
+      'ch',
+      'kor'
     ];
 
     public function __construct()

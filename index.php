@@ -58,7 +58,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
             <a href="?lang=ch">Chinese</a>
             <a href="?lang=en">English</a>
             <a href="?lang=ru">Russian</a>
-            <a>Korean</a>
+            <a href="?lang=kor">Korean</a>
             <a href="?lang=viet">Vietnamese</a>
           </div>
         </div>
@@ -394,7 +394,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </div>
           </div>
           <div class="sale__buttons-group">
-            <a href="files/Whitepaper.pdf" target="_blank" class="sale__button">
+            <a href="files/Whitepaper_<?=$language->currentLang !== 'ru' ? $language->currentLang  : 'en'?>.pdf" target="_blank" class="sale__button">
               <?=lang('sale_white_paper')?>
             </a>
             <a href="#" target="_blank" class="sale__button">
