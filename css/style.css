@@ -544,7 +544,7 @@ textarea {
 }
 .mitoshi__button {
   box-sizing: border-box;
-  width: 190px;
+  min-width: 200px;
   margin-bottom: 15px;
   padding: 10px 15px;
   line-height: 20px;
@@ -1292,7 +1292,6 @@ textarea {
   margin-bottom: 0;
 }
 .solution__button {
-  max-width: 300px;
   display: inline-block;
   margin-top: 30px;
   box-sizing: border-box;
@@ -1407,6 +1406,7 @@ textarea {
     margin-bottom: 0;
   }
   .solution__button {
+    max-width: 350px;
     margin-top: 25px;
   }
 }
@@ -1462,6 +1462,7 @@ textarea {
   box-shadow: 0 0 20px #ffffff;
   cursor: pointer;
   transition: all 0.1s;
+  text-align: center;
 }
 .how__button:hover {
   box-shadow: 0 0 20px #ffc700;
@@ -1513,7 +1514,7 @@ textarea {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 290px;
+    max-width: 400px;
   }
 }
 .roadmap {

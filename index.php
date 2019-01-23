@@ -55,12 +55,11 @@ require_once (__DIR__ . '/php/bootstrap.php');
         <div class="dropdown header__language">
           <button class="header__button">Lang</button>
           <div class="dropdown-content">
-            <a>Chinese</a>
+            <a href="?lang=ch">Chinese</a>
             <a href="?lang=en">English</a>
             <a href="?lang=ru">Russian</a>
-            <a>Spanish</a>
-            <a>Korean</a>
-            <a>Japanese</a>
+            <a href="?lang=kor">Korean</a>
+            <a href="?lang=viet">Vietnamese</a>
           </div>
         </div>
         <div class="header__group">
@@ -395,7 +394,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </div>
           </div>
           <div class="sale__buttons-group">
-            <a href="files/Whitepaper.pdf" target="_blank" class="sale__button">
+            <a href="files/Whitepaper_<?=$language->currentLang !== 'ru' ? $language->currentLang  : 'en'?>.pdf" target="_blank" class="sale__button">
               <?=lang('sale_white_paper')?>
             </a>
             <a href="#" target="_blank" class="sale__button">
