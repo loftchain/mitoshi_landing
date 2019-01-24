@@ -35,6 +35,7 @@
   margin-bottom: 15px;
   padding: 10px 15px;
   line-height: 20px;
+  color: #4f4f4f;
   border-radius: 100px;
   border: none;
   cursor: pointer;
@@ -42,23 +43,20 @@
 
   &--transparent {
     text-align: center;
-    color: #4f4f4f;
-    background: none;
-    border: 1px solid #ffc700;
-    transition: box-shadow 0.1s;
+    background: linear-gradient(90deg, #ffc700 5.65%, #ffe13a 95.2%);
+    box-shadow: 0 0 20px #ffffff;
 
     &:hover {
-      background: linear-gradient(91.95deg, #ffc701 0.35%, #ffe13a 99.76%);
       box-shadow: 0 0 20px #ffc700;
-      border: 1px solid transparent;
-      color: #ffffff;
     }
   }
 
   &--gold {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     text-align: right;
     position: relative;
-    color: #ffffff;
     background: linear-gradient(90deg, #ffc700 5.65%, #ffe13a 95.2%);
     box-shadow: 0 0 20px #ffffff;
 
@@ -72,19 +70,38 @@
   }
 }
 
-.mitoshi__button--gold::before,
-.mitoshi__button--tel::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 22px;
-  transform: translateY(-50%);
-  width: 24px;
+.mitoshi__button--right p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 20px;
   height: 20px;
-  background-image: url(../images/telegram.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #0bf;
+
+  i {
+    margin-right: 1px;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
+
+//.mitoshi__button--gold::before,
+//.mitoshi__button--tel::before {
+//  content: "";
+//  position: absolute;
+//  top: 50%;
+//  left: 22px;
+//  transform: translateY(-50%);
+//  width: 24px;
+//  height: 20px;
+//  background-image: url(../images/telegram.svg);
+//  background-repeat: no-repeat;
+//  background-size: contain;
+//}
 
 @media (max-height: 1000px) {
   .mitoshi {

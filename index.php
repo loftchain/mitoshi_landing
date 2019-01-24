@@ -14,6 +14,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
   <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
   <link rel="icon" href="favicon.ico?v=3" type="image/x-icon">
 	<link href="css/style.min.css?v=8" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <style>
   </style>
 </head>
@@ -180,6 +181,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 <?=lang('mitoshi_brochure')?>
               </a>
               <a class="mitoshi__button mitoshi__button--gold mitoshi__button--right" href="https://t.me/Mitoshi_Crypto" target="_blank">
+                <p><i class="fab fa-telegram-plane"></i></p>
                 <?=lang('mitoshi_community')?>
               </a>
             </div>
