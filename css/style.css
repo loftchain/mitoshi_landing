@@ -400,9 +400,17 @@ textarea {
 .header__language {
   order: 3;
 }
-.header__language button {
-  width: 50px;
+.header__language-button {
+  width: 40px;
   padding: 5px;
+}
+a.header__language-link {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+a.header__language-link img {
+  margin-top: 1px;
 }
 @media (max-width: 1199px) {
   .header {

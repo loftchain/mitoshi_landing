@@ -53,13 +53,50 @@ require_once (__DIR__ . '/php/bootstrap.php');
         </a>
         <button class="header__toggle"></button>
         <div class="dropdown header__language">
-          <button class="header__button">Lang</button>
+          <button class="header__button header__language-button">
+            <?=mb_strtoupper($language->currentLang)?>
+          </button>
           <div class="dropdown-content">
-            <a href="?lang=ch">Chinese</a>
-            <a href="?lang=en">English</a>
-            <a href="?lang=ru">Russian</a>
-            <a href="?lang=kor">Korean</a>
-            <a href="?lang=viet">Vietnamese</a>
+            <a class="header__language-link" href="?lang=eng">
+              ENG
+              <picture>
+                <source srcset="images/dropdown/english.webp" type="image/webp">
+                <source srcset="images/dropdown/english.png" type="image/png">
+                <img src="images/dropdown/english.png" alt="English">
+              </picture>
+            </a>
+            <a class="header__language-link" href="?lang=chn">
+              CHN
+              <picture>
+                <source srcset="images/dropdown/china.webp" type="image/webp">
+                <source srcset="images/dropdown/china.png" type="image/png">
+                <img src="images/dropdown/china.png" alt="Chinese">
+              </picture>
+            </a>
+            <a class="header__language-link" href="?lang=rus">
+              RUS
+              <picture>
+                <source srcset="images/dropdown/russia.webp" type="image/webp">
+                <source srcset="images/dropdown/russia.png" type="image/png">
+                <img src="images/dropdown/russia.png" alt="Russian">
+              </picture>
+            </a>
+            <a class="header__language-link" href="?lang=kor">
+              KOR
+              <picture>
+                <source srcset="images/dropdown/south-korea.webp" type="image/webp">
+                <source srcset="images/dropdown/south-korea.png" type="image/png">
+                <img src="images/dropdown/south-korea.png" alt="Korean">
+              </picture>
+            </a>
+            <a class="header__language-link" href="?lang=vie">
+              VIE
+              <picture>
+                <source srcset="images/dropdown/vietnam.webp" type="image/webp">
+                <source srcset="images/dropdown/vietnam.png" type="image/png">
+                <img src="images/dropdown/vietnam.png" alt="Vietnamese">
+              </picture>
+            </a>
           </div>
         </div>
         <div class="header__group">

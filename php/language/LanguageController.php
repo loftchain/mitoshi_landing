@@ -3,12 +3,12 @@ session_start();
 
 class LanguageController
 {
-    public $currentLang = 'en';
+    public $currentLang = 'eng';
     private $lang = [
-      'en',
-      'ru',
-      'viet',
-      'ch',
+      'eng',
+      'rus',
+      'vie',
+      'chn',
       'kor'
     ];
 

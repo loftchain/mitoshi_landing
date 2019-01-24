@@ -29,7 +29,7 @@ gulp.task('images', function () {
 
 gulp.task('webp', function () {
   return gulp.src('images/**/*.{png,jpg}')
-    .pipe(webp({quality: 75}))
+    .pipe(webp({quality: 65}))
     .pipe(gulp.dest('images'));
 });
 
