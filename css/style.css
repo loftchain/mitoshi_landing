@@ -598,7 +598,7 @@ a.header__language-link img {
   height: 20px;
   border-radius: 50%;
   overflow: hidden;
-  background-color: #0bf;
+  background: linear-gradient(120deg, #0088cc, #a9eeff);
 }
 .mitoshi__button--right p i {
   margin-right: 1px;
@@ -1920,40 +1920,42 @@ a.header__language-link img {
   margin-right: 23px;
 }
 .contacts__list-item a {
-  display: block;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  line-height: 25px;
+  color: #ffffff;
   transition: all 0.1s;
 }
 .contacts__list-item a:hover {
-  box-shadow: 0 0 20px #ffc700;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 .contacts__list-item--medium a {
-  background-image: url(../images/medium.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #000000;
 }
 .contacts__list-item--reddit a {
-  background-image: url(../images/reddit.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #FF4400;
 }
 .contacts__list-item--github a {
-  background-image: url(../images/github.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #24292e;
 }
 .contacts__list-item--bitcoin a {
-  background-image: url(../images/bitcoin.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
+  background-color: #f7931a;
+  background-image: url(../images/bitcoin.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 24px 28px;
 }
-.contacts__list-item--stemit a {
-  background-image: url(../images/steemit.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
+.contacts__list-item--steemit a {
+  background-color: #1fbf8f;
+  background-image: url(../images/steemit.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 24px 22px;
 }
 .contacts__button {
   box-sizing: border-box;
@@ -2029,53 +2031,43 @@ a.header__language-link img {
   margin-right: 26px;
 }
 .footer__item a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background: linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
-  transition: all 0.1s;
+  font-size: 25px;
+  line-height: 25px;
+  color: #ffffff;
+  transition: all 0.2s;
 }
 .footer__item a:last-child {
   margin-right: 0;
 }
 .footer__item a:hover {
-  box-shadow: 0 0 20px #ffc700;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.2);
 }
 .footer__item--telegram a {
-  background-image: url(../images/telegram.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(120deg, #0088cc, #a9eeff);
 }
 .footer__item--whatsapp a {
-  background-image: url(../images/whatsapp.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: linear-gradient(45deg, #E5FFCC, #1EBEA5, #00E676, #D0E9EA);
 }
 .footer__item--mail a {
-  background-image: url(../images/mail.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #005ff9;
 }
 .footer__item--facebook a {
-  background-image: url(../images/facebook.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #4267b2;
 }
 .footer__item--lkdin a {
-  background-image: url(../images/lkdin.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #0077b5;
 }
 .footer__item--twitter a {
-  background-image: url(../images/twitter.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #1DA1F2;
 }
 .footer__item--youtube a {
-  background-image: url(../images/youtube.svg), linear-gradient(90deg, #FFC700 5.65%, #FFE13A 95.2%);
-  background-repeat: no-repeat;
-  background-position: center;
+  background: #e82117;
 }
 .footer__group {
   margin: 0;

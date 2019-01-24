@@ -1076,19 +1076,28 @@ require_once (__DIR__ . '/php/bootstrap.php');
             <ul class="contacts__list">
               <li
                 class="contacts__list-item contacts__list-item--medium"><a
-                href="http://medium.com/@mitoshicrypto" target="_blank"></a></li>
+                href="http://medium.com/@mitoshicrypto" target="_blank">
+                  <i class="fab fa-medium-m"></i>
+                </a></li>
               <li
                 class="contacts__list-item contacts__list-item--reddit"><a
-                href="http://www.reddit.com/user/mitoshicrypto" target="_blank"></a></li>
+                href="http://www.reddit.com/user/mitoshicrypto" target="_blank">
+                  <i class="fab fa-reddit-alien"></i>
+                </a></li>
               <li
-                class="contacts__list-item contacts__list-item--github"><a
-                href="http://github.com/loftchain/smart-contracts/blob/master/MTSH.sol" target="_blank"></a></li>
+                class="contacts__list-item contacts__list-item--github">
+                <a href="http://github.com/loftchain/smart-contracts/blob/master/MTSH.sol" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a></li>
               <li
                 class="contacts__list-item contacts__list-item--bitcoin"><a
-                href="http://bitcointalk.org/index.php?topic=5045268.new#new" target="_blank"></a></li>
+                href="http://bitcointalk.org/index.php?topic=5045268.new#new" target="_blank">
+<!--                  <i class="fab fa-bitcoin"></i>-->
+                </a></li>
               <li
-                class="contacts__list-item contacts__list-item--stemit"><a
-                href="https://steemit.com/@mitoshicrypto" target="_blank"></a></li>
+                class="contacts__list-item contacts__list-item--steemit">
+                <a href="https://steemit.com/@mitoshicrypto" target="_blank">
+                </a></li>
             </ul>
           </div>
           <div class="contacts__group">
@@ -1112,13 +1121,27 @@ require_once (__DIR__ . '/php/bootstrap.php');
     <footer class="footer">
       <div class="footer__wrapper">
         <ul class="footer__list">
-          <li class="footer__item footer__item--telegram"><a href="https://t.me/Mitoshi_Channel" target="_blank"></a></li>
-          <li class="footer__item footer__item--whatsapp"><a href="https://chat.whatsapp.com/invite/L0KiJjxsGzwIQRtU6Cq1Yu" target="_blank"></a></li>
-          <li class="footer__item footer__item--mail"><a href="mailto:luckyyou@mitoshiworldwide.com" target="_blank"></a></li>
-          <li class="footer__item footer__item--facebook"><a href="http://m.facebook.com/MitoshiCryptoLotto/" target="_blank"></a></li>
-          <li class="footer__item footer__item--lkdin"><a href="http://www.linkedin.com/company/mitoshi/" target="_blank"></a></li>
-          <li class="footer__item footer__item--twitter"><a href="http://mobile.twitter.com/mitoshicrypto" target="_blank"></a></li>
-          <li class="footer__item footer__item--youtube"><a href="https://www.youtube.com/channel/UCG2rcEGPN6Q_AQgSN7s_ADA" target="_blank"></a></li>
+          <li class="footer__item footer__item--telegram"><a href="https://t.me/Mitoshi_Channel" target="_blank">
+              <i class="fab fa-telegram-plane"></i>
+            </a></li>
+          <li class="footer__item footer__item--whatsapp"><a href="https://chat.whatsapp.com/invite/L0KiJjxsGzwIQRtU6Cq1Yu" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a></li>
+          <li class="footer__item footer__item--mail"><a href="mailto:luckyyou@mitoshiworldwide.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a></li>
+          <li class="footer__item footer__item--facebook"><a href="http://m.facebook.com/MitoshiCryptoLotto/" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a></li>
+          <li class="footer__item footer__item--lkdin"><a href="http://www.linkedin.com/company/mitoshi/" target="_blank">
+              <i class="fab fa-linkedin-in"></i>
+            </a></li>
+          <li class="footer__item footer__item--twitter"><a href="http://mobile.twitter.com/mitoshicrypto" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a></li>
+          <li class="footer__item footer__item--youtube"><a href="https://www.youtube.com/channel/UCG2rcEGPN6Q_AQgSN7s_ADA" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a></li>
         </ul>
         <p class="footer__group">
           <span>Mitoshi Worldwide Holdings Ltd. @ 2018</span>
