@@ -48,7 +48,12 @@ require_once (__DIR__ . '/php/bootstrap.php');
           <picture>
             <source srcset="images/logo.webp" width="60" height="60" type="image/webp">
             <source srcset="images/logo.png" width="60" height="60" type="image/png">
-            <img src="images/logo.png" width="60" height="60" alt="Mitoshi CryptoLotto ICO" title="Mitoshi CryptoLotto ICO">
+            <img class="header__logo-img" src="images/logo.png" width="60" height="60" alt="Mitoshi CryptoLotto ICO" title="Mitoshi CryptoLotto ICO">
+          </picture>
+          <picture>
+            <source srcset="images/logo_text.webp" type="image/webp">
+            <source srcset="images/logo_text.png" type="image/png">
+            <img class="header__logo-text" src="images/logo.png" alt="Mitoshi CryptoLotto ICO" title="Mitoshi CryptoLotto ICO">
           </picture>
         </a>
         <button class="header__toggle"></button>

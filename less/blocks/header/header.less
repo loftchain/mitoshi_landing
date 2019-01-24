@@ -16,15 +16,20 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 15px;
 }
 
 .header__logo {
   display: flex;
   align-items: center;
-  width: 80px;
-  height: 80px;
-  margin-right: auto;
+  width: 180px;
+  height: 90px;
+  margin-right: 10px;
+
+  picture:first-child {
+    margin-right: 5px;
+  }
 }
 
 .header__group {
@@ -34,16 +39,16 @@
 
 .header__buttons-group {
   display: flex;
-  margin: 0 -5px;
+  margin: 0 -3px;
 }
 
 .header__button {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  margin: 0 5px;
+  margin: 0 3px;
   padding: 7px;
-  min-width: 85px;
+  //min-width: 85px;
   line-height: 20px;
   color: #4f4f4f;
   background: #ffffff;
@@ -137,6 +142,6 @@ a.header__language-link {
   }
 
   .header__language {
-    margin-right: 60px;
+    margin-right: 50px;
   }
 }

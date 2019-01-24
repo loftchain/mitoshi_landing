@@ -217,6 +217,8 @@ input[type="radio"].visually-hidden {
 .dropdown-content {
   display: none;
   position: absolute;
+  top: 40px;
+  left: -45px;
   background-color: #f9f9f9;
   min-width: 100px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -346,14 +348,18 @@ textarea {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 15px;
 }
 .header__logo {
   display: flex;
   align-items: center;
-  width: 80px;
-  height: 80px;
-  margin-right: auto;
+  width: 180px;
+  height: 90px;
+  margin-right: 10px;
+}
+.header__logo picture:first-child {
+  margin-right: 5px;
 }
 .header__group {
   display: flex;
@@ -361,15 +367,14 @@ textarea {
 }
 .header__buttons-group {
   display: flex;
-  margin: 0 -5px;
+  margin: 0 -3px;
 }
 .header__button {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  margin: 0 5px;
+  margin: 0 3px;
   padding: 7px;
-  min-width: 85px;
   line-height: 20px;
   color: #4f4f4f;
   background: #ffffff;
@@ -448,7 +453,7 @@ a.header__language-link img {
     align-self: center;
   }
   .header__language {
-    margin-right: 60px;
+    margin-right: 50px;
   }
 }
 .main-nav {
