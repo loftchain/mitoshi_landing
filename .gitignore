@@ -8,3 +8,11 @@ node_modules/
 npm-debug.*
 Thumbs.db
 package-lock.json
+
+#pdf files
+files/Whitepaper_ch.pdf
+files/Whitepaper_en.pdf
+files/Whitepaper_kor.pdf
+files/Whitepaper_viet.pdf
+files/Fold_Brochure.pdf
+
