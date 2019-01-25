@@ -30,6 +30,17 @@ img {
   height: auto;
 }
 
+img,
+source {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+img[data-src],
+source[data-srcset] {
+  opacity: 0;
+}
+
 h2 {
   margin: 0;
   margin-bottom: 30px;

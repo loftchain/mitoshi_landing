@@ -13,7 +13,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
 	<title>Mitoshi CryptoLotto ICO</title>
   <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
   <link rel="icon" href="favicon.ico?v=3" type="image/x-icon">
-	<link href="css/style.min.css?v=8" rel="stylesheet">
+	<link href="css/style.min.css?v=9" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <style>
   </style>
@@ -459,7 +459,10 @@ require_once (__DIR__ . '/php/bootstrap.php');
           <ul class="challenge__list">
             <li class="challenge__item">
               <div class="challenge__img-wrap">
-                <img src="images/challenge-1.png" alt="Lack Fairness Transparency">
+                <img class="lazy" src="" data-src="images/challenge-1.png" alt="Lack Fairness Transparency">
+                <noscript>
+                  <img src="images/challenge-1.png" alt="Lack Fairness Transparency">
+                </noscript>
               </div>
               <div class="challenge__desc">
                 <h4 class="challenge__item-title">
@@ -472,7 +475,10 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </li>
             <li class="challenge__item">
               <div class="challenge__img-wrap">
-                <img src="images/challenge-2.png" alt="Lack of Innovation">
+                <img class="lazy" src="" data-src="images/challenge-2.png" alt="Lack of Innovation">
+                <noscript>
+                  <img src="images/challenge-2.png" alt="Lack of Innovation">
+                </noscript>
               </div>
               <div class="challenge__desc">
                 <h4 class="challenge__item-title">
@@ -485,7 +491,10 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </li>
             <li class="challenge__item">
               <div class="challenge__img-wrap">
-                <img src="images/challenge-3.png" alt="Regulatory Setbacks">
+                <img class="lazy" src="" data-src="images/challenge-3.png" alt="Regulatory Setbacks">
+                <noscript>
+                  <img src="images/challenge-3.png" alt="Regulatory Setbacks">
+                </noscript>
               </div>
               <div class="challenge__desc">
                 <h4 class="challenge__item-title">
@@ -498,7 +507,10 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </li>
             <li class="challenge__item">
               <div class="challenge__img-wrap">
-                <img src="images/challenge-4.png" alt="Long Payouts">
+                <img class="lazy" src="" data-src="images/challenge-4.png" alt="Long Payouts">
+                <noscript>
+                  <img src="images/challenge-4.png" alt="Long Payouts">
+                </noscript>
               </div>
               <div class="challenge__desc">
                 <h4 class="challenge__item-title">
@@ -511,7 +523,10 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </li>
             <li class="challenge__item">
               <div class="challenge__img-wrap">
-                <img src="images/challenge-5.png" alt="Stunted Growth">
+                <img class="lazy" src="" data-src="images/challenge-5.png" alt="Stunted Growth">
+                <noscript>
+                  <img src="images/challenge-5.png" alt="Stunted Growth">
+                </noscript>
               </div>
               <div class="challenge__desc">
                 <h4 class="challenge__item-title">
@@ -607,7 +622,10 @@ require_once (__DIR__ . '/php/bootstrap.php');
             <?=lang('roadmap_title')?>
           </h2>
           <div class="roadmap__img-wrap">
-            <img src="images/roadmap-bg.png" alt="Roadmap">
+            <img class="lazy" src="" data-src="images/roadmap-bg.png" alt="Roadmap">
+            <noscript>
+              <img src="images/roadmap-bg.png" alt="Roadmap">
+            </noscript>
           </div>
           <div class="roadmap__container">
             <ul class="roadmap__list roadmap__list--start">
@@ -762,10 +780,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--executive">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/tc-picardo-8917a8165/" target="_blank">
                   <picture>
-                    <source srcset="images/team-1.webp" type="image/webp">
-                    <source srcset="images/team-1.png" type="image/png">
-                    <img src="images/team-1.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-1.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-1.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-1.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-1.webp" type="image/webp">
+                      <source srcset="images/team-1.png" type="image/png">
+                      <img src="images/team-1.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_picardo')?></p>
                 <p class="team__member-occup"><?=lang('team_ceo')?></p>
@@ -773,10 +798,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--executive">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/normanvelasco/" target="_blank">
                   <picture>
-                    <source srcset="images/team-2.webp" type="image/webp">
-                    <source srcset="images/team-2.png" type="image/png">
-                    <img src="images/team-2.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-2.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-2.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-2.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-2.webp" type="image/webp">
+                      <source srcset="images/team-2.png" type="image/png">
+                      <img src="images/team-2.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_velasco')?></p>
                 <p class="team__member-occup"><?=lang('team_coo')?></p>
@@ -784,10 +816,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--executive">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/rob-natthavong-jumchai-1a4067172/" target="_blank">
                   <picture>
-                    <source srcset="images/team-5.webp" type="image/webp">
-                    <source srcset="images/team-5.png" type="image/png">
-                    <img src="images/team-5.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-5.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-5.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-5.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-5.webp" type="image/webp">
+                      <source srcset="images/team-5.png" type="image/png">
+                      <img src="images/team-5.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_jumchai')?></p>
                 <p class="team__member-occup">
@@ -797,10 +836,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--executive">
                 <a class="team__img-wrap" href="#" target="_blank">
                   <picture>
-                    <source srcset="images/team-6.webp" type="image/webp">
-                    <source srcset="images/team-6.png" type="image/png">
-                    <img src="images/team-6.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-6.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-6.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-6.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-6.webp" type="image/webp">
+                      <source srcset="images/team-6.png" type="image/png">
+                      <img src="images/team-6.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_green')?></p>
                 <p class="team__member-occup">
@@ -810,10 +856,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--management">
                 <a class="team__img-wrap" href="#" target="_blank">
                   <picture>
-                    <source srcset="images/team-7.webp" type="image/webp">
-                    <source srcset="images/team-7.jpg" type="image/jpeg">
-                    <img src="images/team-7.jpg" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-7.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-7.jpg" type="image/jpeg">
+                    <img class="lazy" src="" data-src="images/team-7.jpg" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-7.webp" type="image/webp">
+                      <source srcset="images/team-7.jpg" type="image/jpeg">
+                      <img src="images/team-7.jpg" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_peralta')?></p>
                 <p class="team__member-occup">
@@ -830,10 +883,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--development">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/sergey-provalinski-0b8204162/" target="_blank">
                   <picture>
-                    <source srcset="images/team-9.webp" type="image/webp">
-                    <source srcset="images/team-9.jpg" type="image/jpeg">
-                    <img src="images/team-9.jpg" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-9.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-9.jpg" type="image/jpeg">
+                    <img class="lazy" src="" data-src="images/team-9.jpg" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-9.webp" type="image/webp">
+                      <source srcset="images/team-9.jpg" type="image/jpeg">
+                      <img src="images/team-9.jpg" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_proval')?></p>
                 <p class="team__member-occup"><?=lang('team_front')?></p>
@@ -841,10 +901,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--development">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/%D0%B0%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80-%D0%BF%D0%BE%D0%B4%D1%80%D0%B5%D0%B7%D0%BE%D0%B2-b3328a173/" target="_blank">
                   <picture>
-                    <source srcset="images/team-10.webp" type="image/webp">
-                    <source srcset="images/team-10.png" type="image/png">
-                    <img src="images/team-10.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" scrset="" data-srcset="images/team-10.webp" type="image/webp">
+                    <source class="lazy" scrset="" data-srcset="images/team-10.png" type="image/png">
+                    <img class="lazy" scr="" data-src="images/team-10.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-10.webp" type="image/webp">
+                      <source srcset="images/team-10.png" type="image/png">
+                      <img src="images/team-10.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_podrez')?></p>
                 <p class="team__member-occup"><?=lang('team_back')?></p>
@@ -852,10 +919,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--development">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/blockchainwork/" target="_blank">
                   <picture>
-                    <source srcset="images/team-11.webp" type="image/webp">
-                    <source srcset="images/team-11.png" type="image/png">
-                    <img src="images/team-11.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" scrset="" data-srcset="images/team-11.webp" type="image/webp">
+                    <source class="lazy" scrset="" data-srcset="images/team-11.png" type="image/png">
+                    <img class="lazy" scr="" data-src="images/team-11.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-11.webp" type="image/webp">
+                      <source srcset="images/team-11.png" type="image/png">
+                      <img src="images/team-11.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_kalin')?></p>
                 <p class="team__member-occup"><?=lang('team_protocol')?></p>
@@ -863,10 +937,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--development">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/julia-drobnitsa/" target="_blank">
                   <picture>
-                    <source srcset="images/team-12.webp" type="image/webp">
-                    <source srcset="images/team-12.png" type="image/png">
-                    <img src="images/team-12.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" scrset="" data-srcset="images/team-12.webp" type="image/webp">
+                    <source class="lazy" scrset="" data-srcset="images/team-12.png" type="image/png">
+                    <img class="lazy" scr="" data-src="images/team-12.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-12.webp" type="image/webp">
+                      <source srcset="images/team-12.png" type="image/png">
+                      <img src="images/team-12.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_drobnitsa')?></p>
                 <p class="team__member-occup"><?=lang('team_ux')?></p>
@@ -881,10 +962,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--pr">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/jerickalcancia/" target="_blank">
                   <picture>
-                    <source srcset="images/team-14.webp" type="image/webp">
-                    <source srcset="images/team-14.png" type="image/png">
-                    <img src="images/team-14.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-14.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-14.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-14.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-14.webp" type="image/webp">
+                      <source srcset="images/team-14.png" type="image/png">
+                      <img src="images/team-14.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_alcan')?></p>
                 <p class="team__member-occup"><?=lang('team_motion')?></p>
@@ -892,10 +980,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--pr">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/rmcccos/" target="_blank">
                   <picture>
-                    <source srcset="images/team-16.webp" type="image/webp">
-                    <source srcset="images/team-16.png" type="image/png">
-                    <img src="images/team-16.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-16.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-16.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-16.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-16.webp" type="image/webp">
+                      <source srcset="images/team-16.png" type="image/png">
+                      <img src="images/team-16.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_rowena')?></p>
                 <p class="team__member-occup"><?=lang('team_copy')?></p>
@@ -910,10 +1005,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/kashif-syed-b09003139/" target="_blank">
                   <picture>
-                    <source srcset="images/team-17.webp" type="image/webp">
-                    <source srcset="images/team-17.png" type="image/png">
-                    <img src="images/team-17.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-17.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-17.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-17.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-17.webp" type="image/webp">
+                      <source srcset="images/team-17.png" type="image/png">
+                      <img src="images/team-17.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_syed')?></p>
                 <p class="team__member-occup"><?=lang('team_social')?></p>
@@ -921,10 +1023,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/raizalyn-razo/" target="_blank">
                   <picture>
-                    <source srcset="images/team-18.webp" type="image/webp">
-                    <source srcset="images/team-18.png" type="image/png">
-                    <img src="images/team-18.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-18.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-18.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-18.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-18.webp" type="image/webp">
+                      <source srcset="images/team-18.png" type="image/png">
+                      <img src="images/team-18.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_razo')?></p>
                 <p class="team__member-occup"><?=lang('team_community')?></p>
@@ -932,10 +1041,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/celeste-paras-79947b6a/" target="_blank">
                   <picture>
-                    <source srcset="images/team-19.webp" type="image/webp">
-                    <source srcset="images/team-19.png" type="image/png">
-                    <img src="images/team-19.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-19.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-19.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-19.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-19.webp" type="image/webp">
+                      <source srcset="images/team-19.png" type="image/png">
+                      <img src="images/team-19.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_paras')?></p>
                 <p class="team__member-occup"><?=lang('team_community_en')?></p>
@@ -943,10 +1059,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/chen-chee-fah-783110142/" target="_blank">
                   <picture>
-                    <source srcset="images/team-20.webp" type="image/webp">
-                    <source srcset="images/team-20.png" type="image/png">
-                    <img src="images/team-20.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-20.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-20.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-20.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-20.webp" type="image/webp">
+                      <source srcset="images/team-20.png" type="image/png">
+                      <img src="images/team-20.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_fah')?></p>
                 <p class="team__member-occup"><?=lang('team_community_mandarin')?></p>
@@ -954,10 +1077,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/awele-kimberly-ajiduah-8981a075/" target="_blank">
                   <picture>
-                    <source srcset="images/team-22.webp" type="image/webp">
-                    <source srcset="images/team-22.png" type="image/png">
-                    <img src="images/team-22.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-22.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-22.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-22.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-22.webp" type="image/webp">
+                      <source srcset="images/team-22.png" type="image/png">
+                      <img src="images/team-22.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_awele')?></p>
                 <p class="team__member-occup"><?=lang('team_content')?></p>
@@ -965,10 +1095,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/hazel-olivar-58ba23133/" target="_blank">
                   <picture>
-                    <source srcset="images/team-24.webp" type="image/webp">
-                    <source srcset="images/team-24.png" type="image/png">
-                    <img src="images/team-24.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-24.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-24.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-24.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-24.webp" type="image/webp">
+                      <source srcset="images/team-24.png" type="image/png">
+                      <img src="images/team-24.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_hazel')?></p>
                 <p class="team__member-occup"><?=lang('team_community')?></p>
@@ -976,10 +1113,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/philip-smart-43898b169/" target="_blank">
                   <picture>
-                    <source srcset="images/team-23.webp" type="image/webp">
-                    <source srcset="images/team-23.png" type="image/png">
-                    <img src="images/team-23.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-23.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-23.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-23.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-23.webp" type="image/webp">
+                      <source srcset="images/team-23.png" type="image/png">
+                      <img src="images/team-23.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_kola')?></p>
                 <p class="team__member-occup"><?=lang('team_community')?></p>
@@ -987,10 +1131,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href=https://www.linkedin.com/in/kris-manalo-793173175/" target="_blank">
                   <picture>
-                    <source srcset="images/team-27.webp" type="image/webp">
-                    <source srcset="images/team-27.jpg" type="image/jpeg">
-                    <img src="images/team-27.jpg" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-27.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-27.jpg" type="image/jpeg">
+                    <img class="lazy" src="" data-src="images/team-27.jpg" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-27.webp" type="image/webp">
+                      <source srcset="images/team-27.jpg" type="image/jpeg">
+                      <img src="images/team-27.jpg" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_manalo')?></p>
                 <p class="team__member-occup"><?=lang('team_community')?></p>
@@ -998,10 +1149,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--media">
                 <a class="team__img-wrap" href=https://www.linkedin.com/in/geneva-padua-b93646b1/" target="_blank">
                   <picture>
-                    <source srcset="images/team-28.webp" type="image/webp">
-                    <source srcset="images/team-28.jpg" type="image/jpeg">
-                    <img src="images/team-28.jpg" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-28.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-28.jpg" type="image/jpeg">
+                    <img class="lazy" src="" data-src="images/team-28.jpg" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-28.webp" type="image/webp">
+                      <source srcset="images/team-28.jpg" type="image/jpeg">
+                      <img src="images/team-28.jpg" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name">Geneva Padua</p>
                 <p class="team__member-occup"><?=lang('team_community')?></p>
@@ -1016,10 +1174,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--advisors">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/nikita-melnikov-a71a06b8/" target="_blank">
                   <picture>
-                    <source srcset="images/team-3.webp" type="image/webp">
-                    <source srcset="images/team-3.png" type="image/png">
-                    <img src="images/team-3.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/team-3.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/team-3.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-3.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-3.webp" type="image/webp">
+                      <source srcset="images/team-3.png" type="image/png">
+                      <img src="images/team-3.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_melnikov')?></p>
                 <p class="team__member-occup"><?=lang('team_blockchain')?></p>
@@ -1027,10 +1192,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--advisors">
                 <a class="team__img-wrap" href="https://www.linkedin.com/in/kim-zafra-el-jugador-53393037/" target="_blank">
                   <picture>
-                    <source srcset="images/team-4.webp" type="image/webp">
-                    <source srcset="images/team-4.png" type="image/png">
-                    <img src="images/team-4.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" src="" data-srcset="images/team-4.webp" type="image/webp">
+                    <source class="lazy" src="" data-srcset="images/team-4.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/team-4.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/team-4.webp" type="image/webp">
+                      <source srcset="images/team-4.png" type="image/png">
+                      <img src="images/team-4.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name"><?=lang('team_zafra')?></p>
                 <p class="team__member-occup"><?=lang('team_math')?></p>
@@ -1045,10 +1217,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--partners">
                 <a class="team__img-wrap team__img-wrap--partners" href="https://loftchain.io/" target="_blank">
                   <picture>
-                    <source srcset="images/partner-1.webp" type="image/webp">
-                    <source srcset="images/partner-1.png" type="image/png">
-                    <img src="images/partner-1.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" srcset="" data-srcset="images/partner-1.webp" type="image/webp">
+                    <source class="lazy" srcset="" data-srcset="images/partner-1.png" type="image/png">
+                    <img class="lazy" src="" data-src="images/partner-1.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/partner-1.webp" type="image/webp">
+                      <source srcset="images/partner-1.png" type="image/png">
+                      <img src="images/partner-1.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name">Loftchain</p>
                 <p class="team__member-occup"><?=lang('team_tech_partners')?></p>
@@ -1056,10 +1235,17 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <li class="team__list-item team__list-item--partners">
                 <a class="team__img-wrap team__img-wrap--partners team__img-wrap--partners-shrink" href="https://www.experfy.com/" target="_blank">
                   <picture>
-                    <source srcset="images/partner-3.webp" type="image/webp">
-                    <source srcset="images/partner-3.png" type="image/jpeg">
-                    <img src="images/partner-3.png" alt="Member of Mithoshi Team">
+                    <source class="lazy" scrset="" data-srcset="images/partner-3.webp" type="image/webp">
+                    <source class="lazy" scr="" data-srcset="images/partner-3.png" type="image/jpeg">
+                    <img class="lazy" scr="" data-src="images/partner-3.png" alt="Member of Mithoshi Team">
                   </picture>
+                  <noscript>
+                    <picture>
+                      <source srcset="images/partner-3.webp" type="image/webp">
+                      <source srcset="images/partner-3.png" type="image/jpeg">
+                      <img src="images/partner-3.png" alt="Member of Mithoshi Team">
+                    </picture>
+                  </noscript>
                 </a>
                 <p class="team__member-name">Experfy</p>
               </li>
@@ -1158,9 +1344,9 @@ require_once (__DIR__ . '/php/bootstrap.php');
           <a href="disclaimer/" target="_blank"><?=lang('footer_disclamer')?></a>
         </p>
       </div>
-
     </footer>
 	</div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/main.js?v=3"></script>
   <script>
@@ -1218,6 +1404,77 @@ require_once (__DIR__ . '/php/bootstrap.php');
     // remove youtube link, stopping the video from playing in the background
     $iframe.attr('src','');
   }
+</script>
+<script>
+  var lazy = [];
+
+  function setLazy(){
+    lazy = document.getElementsByClassName('lazy');
+  }
+
+  function lazyLoad(){
+
+    for(var i=0; i<lazy.length; i++){
+      if(isInViewport(lazy[i])){
+        if (lazy[i].getAttribute('data-src')){
+          if (lazy[i].getAttribute('srcset')) {
+            lazy[i].srcset =
+              lazy[i].getAttribute('data-srcset');
+
+            // remove the attribute
+            lazy[i].removeAttribute('data-src');
+          } else {
+            lazy[i].src =
+              lazy[i].getAttribute('data-src');
+
+            // remove the attribute
+            lazy[i].removeAttribute('data-src');
+          }
+        }
+      }
+    }
+
+    cleanLazy();
+  }
+
+  function cleanLazy(){
+    lazy =
+      Array.prototype.filter.call(
+        lazy,
+        function(l){
+          return l.getAttribute('data-src');
+        }
+      );
+  }
+
+  function registerListener(event, func) {
+    if (window.addEventListener) {
+      window.addEventListener(event, func)
+    } else {
+      window.attachEvent('on' + event, func)
+    }
+  }
+
+  function isInViewport(el){
+    var rect = el.getBoundingClientRect();
+
+    return (
+      rect.bottom >= 0 &&
+      rect.right >= 0 &&
+
+      rect.top <= (
+        window.innerHeight ||
+        document.documentElement.clientHeight) &&
+
+      rect.left <= (
+        window.innerWidth ||
+        document.documentElement.clientWidth)
+    );
+  }
+
+  registerListener('load', setLazy);
+  registerListener('load', lazyLoad);
+  registerListener('scroll', lazyLoad);
 </script>
 </body>
 </html>
