@@ -761,6 +761,9 @@ a.header__language-link img {
   padding: 0 10px;
 }
 .about__rating-item dt img {
+  height: 45px;
+}
+.about__rating-item dt img.big {
   height: 50px;
 }
 .about__rating-item:nth-child(odd) {

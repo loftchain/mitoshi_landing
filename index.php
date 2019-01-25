@@ -197,7 +197,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
                   </dt>
                   <dd>
                     <img src="images/rating/rated-star-40.png" alt="Rating">
-                    <p>3.9</p>
+                    <p>4.1</p>
                   </dd>
                 </dl>
               </a>
@@ -206,7 +206,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <a href="https://icoholder.com/en/mitoshi-27603" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
-                    <img src="images/rating/ico-holder.svg" alt="ICO-Holder">
+                    <img class="big" src="images/rating/ico-holder.svg" alt="ICO-Holder">
                   </dt>
                   <dd>
                     <img src="images/rating/rated-star-48.png" alt="Rating">
@@ -232,7 +232,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <a href="http://toptokensales.com/?s=Mitoshi" class="about__rating-link" target="_blank">
                 <dl>
                   <dt>
-                    <img src="images/rating/top-token-sales.svg" alt="TopTokenSale">
+                    <img src="images/rating/top-token-sales.png" alt="TopTokenSale">
                   </dt>
                   <dd>
                     <img src="images/rating/rated-star-30.png" alt="Rating">
