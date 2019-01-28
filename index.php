@@ -257,26 +257,26 @@ require_once (__DIR__ . '/php/bootstrap.php');
           </ul>
           <div class="about__sale">
             <h3 class="about__sale-title">
-              Pre-Sale Live
+              <?=$getData['roundName']?>
             </h3>
             <p class="about__sale-status">
               Sales Status:
-              <span class="about__sale-hardcap"></span>
-              USD
+              <span class="about__sale-hardcap"><?=round($getData['sumToken'])?></span>
+                MTSH
             </p>
             <ul class="about__sale-list">
               <li class="about__sale-item">
                 <img class="about__sale-icon" src="images/sale/btc.svg" alt="BTC">
                 <p>
-                  BTC =
-                  <span class="about__sale-btc"></span>
+                 1 BTC =
+                  <span class="about__sale-btc"><?=round($getData['btc_usd'] / $getData['currentPrice'])?></span>
                 </p>
                 <a class="about__join-link" href="https://investor.mitoshi.io/login" target="_blank">Join Now</a>
               </li>
               <li class="about__sale-item">
                 <img class="about__sale-icon" src="images/sale/eth.svg" alt="ETH">
                 <p>
-                  ETH = <span class="about__sale-eth"></span>
+                  1 ETH = <span class="about__sale-eth"><?=round($getData['eth_usd'] / $getData['currentPrice'])?></span>
                 </p>
                 <p>
                   <a class="about__join-link" href="https://investor.mitoshi.io/login" target="_blank">Join Now</a>
@@ -1163,27 +1163,27 @@ require_once (__DIR__ . '/php/bootstrap.php');
 	</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/main.js?v=3"></script>
-  <script>
-    const socket = new WebSocket('wss://api2-backend.loftchain.io/ws/');
-    socket.onopen = function () {
-      console.log('Connected');
-      socket.send(JSON.stringify({
-        event: 'mitoshi',
-        data: 'mitoshi',
-      }));
-
-      socket.onmessage = function (data) {
-        const sumAmount = JSON.parse(data.data);
-        const aboutSection = document.body.querySelector('.about');
-        const sum = aboutSection.querySelector('.about__sale-hardcap');
-        const btc = aboutSection.querySelector('.about__sale-btc');
-        const eth = aboutSection.querySelector('.about__sale-eth');
-        sum.textContent = (sumAmount.btcUsd + sumAmount.ethUsd).toFixed(2);
-        btc.textContent = sumAmount.btc.toFixed(4);
-        eth.textContent = sumAmount.eth.toFixed(4);
-      }};
-
-  </script>
+<!--  <script>-->
+<!--    const socket = new WebSocket('wss://api2-backend.loftchain.io/ws/');-->
+<!--    socket.onopen = function () {-->
+<!--      console.log('Connected');-->
+<!--      socket.send(JSON.stringify({-->
+<!--        event: 'mitoshi',-->
+<!--        data: 'mitoshi',-->
+<!--      }));-->
+<!---->
+<!--      socket.onmessage = function (data) {-->
+<!--        const sumAmount = JSON.parse(data.data);-->
+<!--        const aboutSection = document.body.querySelector('.about');-->
+<!--        const sum = aboutSection.querySelector('.about__sale-hardcap');-->
+<!--        const btc = aboutSection.querySelector('.about__sale-btc');-->
+<!--        const eth = aboutSection.querySelector('.about__sale-eth');-->
+<!--        sum.textContent = (sumAmount.btcUsd + sumAmount.ethUsd).toFixed(2);-->
+<!--        btc.textContent = sumAmount.btc.toFixed(4);-->
+<!--        eth.textContent = sumAmount.eth.toFixed(4);-->
+<!--      }};-->
+<!---->
+<!--  </script>-->
   <script>
   // poster frame click event
   $(document).on('click','.solution__js-iframe-btn',function(ev) {
