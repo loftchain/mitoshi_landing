@@ -1405,7 +1405,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
     $iframe.attr('src','');
   }
 </script>
-<script>
+  <script>
   var lazy = [];
 
   function setLazy(){
