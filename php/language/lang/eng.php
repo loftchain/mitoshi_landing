@@ -82,7 +82,7 @@ return [
   'challenge_issues' => 'Issues and challenges in industry have not only hurt the industry, but have also
                         hindered its growth. We look at the more pressing reasons why today’s traditional
                         lotteries need to evolve.',
-  'challenge_lack_transparency' => 'Lack Fairness Transparency',
+  'challenge_lack_transparency' => 'Lack Of Fairness And Transparency',
   'challenge_lack_transparency_text' => 'A recent study went into how exactly a lottery can be rigged, tampered and
                                         cheated – arising questions such us the validity and “realness” of the winning
                                         ticket; fair allocation of ticket proceeds to the prize pool; is the winning number

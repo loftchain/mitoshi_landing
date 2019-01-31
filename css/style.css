@@ -1256,6 +1256,7 @@ a.header__language-link img {
   line-height: 21px;
 }
 .challenge__item-text {
+  text-align: justify;
   margin: 0;
 }
 @media (max-width: 991px) {
