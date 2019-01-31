@@ -269,7 +269,8 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 <img class="about__sale-icon" src="images/sale/btc.svg" alt="BTC">
                 <p>
                  1 BTC =
-                  <span class="about__sale-btc"><?=round($getData['btc_usd'] / $getData['currentPrice'])?></span>
+                  <span class="about__sale-btc"><?=round($getData['btc_usd'] / $getData['currentPrice'])?></span> 
+                  MTSH
                 </p>
                 <a class="about__join-link" href="https://investor.mitoshi.io/login" target="_blank">Join Now</a>
               </li>
@@ -277,6 +278,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 <img class="about__sale-icon" src="images/sale/eth.svg" alt="ETH">
                 <p>
                   1 ETH = <span class="about__sale-eth"><?=round($getData['eth_usd'] / $getData['currentPrice'])?></span>
+                  MTSH
                 </p>
                 <p>
                   <a class="about__join-link" href="https://investor.mitoshi.io/login" target="_blank">Join Now</a>
