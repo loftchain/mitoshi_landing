@@ -13,7 +13,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
 	<title>Mitoshi CryptoLotto ICO</title>
   <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
   <link rel="icon" href="favicon.ico?v=3" type="image/x-icon">
-	<link href="css/style.min.css?v=9" rel="stylesheet">
+	<link href="css/style.min.css?v=10" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <style>
   </style>
@@ -163,7 +163,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
               CryptoLotto ICO
             </h2>
             <div class="mitoshi__desc">
-              <p class="mitoshi__text mitoshi__text--strong">
+              <p class="mitoshi__text mitoshi__text--strong capitalize">
                 <b><?=lang('mitoshi_joy_text')?></b>
               </p>
               <p class="mitoshi__text">
@@ -294,19 +294,19 @@ require_once (__DIR__ . '/php/bootstrap.php');
               <iframe width="560" height="315" src="https://www.youtube.com/embed/nxCJ80f2_sU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
             <div class="about__desc">
-              <p class="about__text about__text--strong">
+              <p class="about__text about__text--strong capitalize">
                 <b><?=lang('about_vision')?></b>
               </p>
               <p class="about__text">
                 <?=lang('about_vision_text')?>
               </p>
-              <p class="about__text about__text--strong">
+              <p class="about__text about__text--strong capitalize">
                 <b><?=lang('about_contract')?></b>
               </p>
               <p class="about__text">
                 <?=lang('about_contract_text')?>
               </p>
-              <p class="about__text about__text--strong">
+              <p class="about__text about__text--strong capitalize">
                 <b><?=lang('about_draws')?></b>
               </p>
               <p class="about__text">
@@ -546,7 +546,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
             <h2 class="solution__title">
               <?=lang('solution_title')?>
             </h2>
-            <h4 class="solution__subtitle">
+            <h4 class="solution__subtitle capitalize">
               <?=lang('solution_integrating')?>
             </h4>
             <p class="solution__text">
@@ -589,12 +589,12 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </picture>
           </div>
           <div class="how__desc">
-            <h2 class="how__title">
+            <h2 class="how__title capitalize">
               <?=lang('how_title')?>
             </h2>
             <ul class="how__list">
               <li class="how__item">
-                <h3 class="how__subtitle">
+                <h3 class="how__subtitle capitalize">
                   <?=lang('how_mobile')?>
                 </h3>
                 <p class="how__text">
@@ -602,13 +602,13 @@ require_once (__DIR__ . '/php/bootstrap.php');
                 </p>
               </li>
               <li class="how__item">
-                <h3 class="how__subtitle"><?=lang('how_payout')?></h3>
+                <h3 class="how__subtitle capitalize"><?=lang('how_payout')?></h3>
                 <p class="how__text">
                   <?=lang('how_payout_text')?>
                 </p>
               </li>
               <li class="how__item">
-                <h3 class="how__subtitle"><?=lang('how_bounty')?></h3>
+                <h3 class="how__subtitle capitalize"><?=lang('how_bounty')?></h3>
                 <p class="how__text">
                   <?=lang('how_bounty_text')?>
                 </p>
@@ -1332,7 +1332,7 @@ require_once (__DIR__ . '/php/bootstrap.php');
             </a></li>
         </ul>
         <p class="footer__group">
-          <span>Mitoshi Worldwide Holdings Ltd. @ 2018</span>
+          <span>Mitoshi Worldwide Holdings Ltd. @ 2019</span>
           <span>|</span><br>
           <span href="#"><?=lang('footer_rights')?></span>
         </p>

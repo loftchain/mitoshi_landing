@@ -147,6 +147,9 @@ template {
 [hidden] {
   display: none;
 }
+.capitalize {
+  text-transform: capitalize;
+}
 @font-face {
   font-family: 'Rubik';
   font-style: normal;
